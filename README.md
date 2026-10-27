@@ -38,11 +38,11 @@ Biblioteki są zapisane w projekcie, a nie pobierane z CDN. Uwaga: po otwarciu p
 | # | Zadanie | Dlaczego |
 |---|---------|----------|
 | 1 | Uzupełnij pole `"autor"` w `data/places.json` i uruchom `python tools/zbuduj_dane.py`. | Teraz jest tam `UZUPEŁNIJ: imię i nazwisko, klasa`. |
-| 2 | **Zweryfikuj współrzędne 9 miejsc** oznaczonych jako „położenie przybliżone” (instrukcja niżej). | Dokładnych współrzędnych nie dało się pobrać z dostępnych źródeł. Znaczniki mogą być przesunięte nawet o kilkaset metrów. |
+| 2 | Kliknij na mapie każde miejsce i sprawdź, czy znacznik stoi we właściwym punkcie. | Współrzędne wszystkich 19 miejsc pochodzą z OpenStreetMap (link przy każdym miejscu), ale warto obejrzeć je samemu. |
 | 3 | Opublikuj stronę na GitHub Pages. | Kod QR musi prowadzić do publicznego adresu. |
 | 4 | Wygeneruj QR, wydrukuj, zeskanuj telefonem. | Dopiero wtedy wiadomo, że QR działa. |
 
-Dopóki punkt 2 nie jest zrobiony, strona i wydruk **same informują**, że położenie części miejsc jest przybliżone. Zdanie „dane lokalizacyjne zostały zweryfikowane” pojawi się automatycznie dopiero wtedy, gdy wszystkie miejsca będą miały potwierdzone współrzędne. Nie wpisuj go ręcznie wcześniej.
+Jeśli dodasz nowe miejsce bez sprawdzonych współrzędnych (status `przyblizone`), strona i wydruk same to oznaczą.
 
 ---
 
@@ -133,7 +133,7 @@ Szczegóły z rysunkiem: `docs/instrukcja-wydruku.pdf`.
 
 - **Podkład mapy:** © OpenStreetMap contributors, licencja ODbL — <https://www.openstreetmap.org/copyright>. Kafelki pochodzą z serwera `tile.openstreetmap.org`. Jego [zasady korzystania](https://operations.osmfoundation.org/policies/tiles/) pozwalają na zwykłe przeglądanie mapy na stronie, jeśli atrybucja jest widoczna (jest w rogu mapy) i nie pobiera się kafelków hurtowo (projekt tego nie robi). Wydruk powstaje z kafelków wczytanych podczas zwykłego oglądania strony, a atrybucja wraz z adresem `openstreetmap.org/copyright` jest wydrukowana na mapie.
 - **Mapa miasta (SIP Wrocławia):** według strony „Dane, usługi i narzędzia” (<https://gis.um.wroc.pl/zasoby/>) mapa podkładowa udostępniona jako usługa WMS ma warunki „bez ograniczeń”. Projekt jej nie osadza, bo do mapy na telefonie lepiej nadają się kafelki OSM. Serwis SIP służy tu do sprawdzania adresów.
-- **Dane o miejscach:** <https://www.wroclaw.pl> (listy basenów i stadionów, strony parków, artykuły o kąpieliskach i siłowni plenerowej) oraz Wikipedia. Źródła każdego miejsca są w `places.json` i w okienku na mapie.
+- **Dane o miejscach:** <https://www.wroclaw.pl> (listy basenów i kąpielisk, strony parków i lasów, artykuły o kąpieliskach, siłowni plenerowej, torze wrotkarskim i bulwarach) oraz Wikipedia. Współrzędne: OpenStreetMap (Nominatim) — skrypt `tools/geokoduj_ci.py` uruchamiany przez GitHub Actions; wyniki sprawdzone ręcznie 27.10.2026. Źródła każdego miejsca są w `places.json` i w okienku na mapie.
 - **Biblioteki:** Leaflet 1.9.4 (aktualna stabilna wersja według leafletjs.com; wersja 2.0 jest jeszcze testowa), qrcode-generator 1.4.4.
 - Projekt przygotowano z pomocą AI (Claude). Zobacz też „KROK 0”.
 
@@ -141,4 +141,4 @@ Szczegóły z rysunkiem: `docs/instrukcja-wydruku.pdf`.
 
 - Nie podaje godzin otwarcia i nie oznacza miejsc jako bezpłatnych, dostępnych dla osób z niepełnosprawnościami ani czynnych cały rok, jeśli nie potwierdza tego źródło. Wyjątek: siłownia przy Tarczyński Arena, którą wroclaw.pl opisuje jako „ogólnodostępną i bezpłatną”.
 - Ceny kąpielisk dotyczą sezonu 2026 i są tak opisane.
-- Przy Stadionie Olimpijskim i Stadionie Sztabowa zaznaczono, że ich ogólna dostępność dla mieszkańców **nie jest potwierdzona**.
+- Na mapie są tylko miejsca, których istnienie, adres i położenie potwierdzają podane źródła. Stadiony bez potwierdzonego dostępu dla mieszkańców i pumptrack bez potwierdzonego położenia zostały usunięte.

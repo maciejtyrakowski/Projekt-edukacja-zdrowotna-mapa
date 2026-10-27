@@ -135,7 +135,7 @@
     var zr = el('section', 'zrodla-druk');
     var autor = stan.autor ? esc(stan.autor) : '______________________________';
     var html = '<p><strong>Źródła:</strong> podkład mapy © OpenStreetMap contributors, licencja ODbL — openstreetmap.org/copyright. ' +
-      'Dane o miejscach: wroclaw.pl, Wikipedia (źródła każdego miejsca są podane na stronie internetowej). ' +
+      'Dane o miejscach: wroclaw.pl, Wikipedia; położenie miejsc: OpenStreetMap (źródła każdego miejsca są podane na stronie internetowej). ' +
       'Stan danych: ' + esc(W.formatujDate(DANE.meta.data_weryfikacji)) + '. Godziny i ceny sprawdzaj na stronach obiektów.</p>';
     if (przyblizone > 0) {
       html += '<p>* Położenie ' + przyblizone + (przyblizone === 1 ? ' miejsca' : ' miejsc') + ' jest przybliżone i wymaga weryfikacji.</p>';
