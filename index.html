@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wrocław dla zdrowia — mapa miejsc prozdrowotnych</title>
+  <meta name="description" content="Szkolny projekt z edukacji zdrowotnej: interaktywna mapa parków, basenów, obiektów sportowych i innych miejsc sprzyjających zdrowiu we Wrocławiu.">
+  <meta name="theme-color" content="#2e7d32">
+  <link rel="stylesheet" href="lib/leaflet/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="naglowek">
+    <div class="naglowek__tresc">
+      <p class="naglowek__etykieta">Projekt z edukacji zdrowotnej</p>
+      <h1>Wrocław dla zdrowia</h1>
+      <p class="naglowek__opis">Mapa miejsc, które sprzyjają zdrowemu stylowi życia: parków, basenów, obiektów sportowych i innych miejsc do aktywnego wypoczynku.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="filtry" aria-label="Filtrowanie miejsc">
+      <div class="filtry__lista" id="filtry" role="group" aria-label="Kategorie"></div>
+      <button type="button" class="przycisk" id="pokaz-wszystkie">Pokaż wszystkie miejsca</button>
+    </section>
+
+    <div class="uklad">
+      <div class="mapa-ramka">
+        <div id="mapa" role="region" aria-label="Mapa Wrocławia z zaznaczonymi miejscami"></div>
+        <p class="mapa-uwaga" id="uwaga-mapy" role="status" hidden></p>
+        <p class="mapa-podpowiedz" id="podpowiedz-edycja" hidden>Tryb sprawdzania: kliknij w mapę, żeby odczytać współrzędne punktu.</p>
+      </div>
+
+      <section class="lista" aria-labelledby="lista-tytul">
+        <h2 id="lista-tytul">Miejsca na mapie <span class="licznik" id="licznik"></span></h2>
+        <ol class="lista__miejsca" id="lista"></ol>
+      </section>
+    </div>
+
+    <section class="info" aria-labelledby="info-tytul">
+      <h2 id="info-tytul">O projekcie i źródłach</h2>
+      <div class="info__siatka">
+        <div>
+          <h3>Legenda</h3>
+          <ul class="legenda" id="legenda"></ul>
+        </div>
+        <div>
+          <h3>Źródła danych</h3>
+          <ul class="zrodla" id="zrodla-ogolne"></ul>
+          <p class="drobne">Źródła konkretnego miejsca znajdziesz w jego okienku na mapie.</p>
+        </div>
+        <div>
+          <h3>Rzetelność danych</h3>
+          <p id="stan-danych"></p>
+          <p id="ai-info"></p>
+          <p class="drobne">Godziny otwarcia i ceny mogą się zmieniać. Przed wizytą sprawdź je na stronie obiektu.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="stopka">
+    <p>Autor projektu: <span id="autor"></span></p>
+    <p>Mapa: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · <a href="https://www.openstreetmap.org/fixthemap">Zgłoś błąd na mapie</a> · Biblioteka <a href="https://leafletjs.com/">Leaflet</a></p>
+  </footer>
+
+  <script src="lib/leaflet/leaflet.js"></script>
+  <script src="lib/wspolne.js"></script>
+  <script src="data/places.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

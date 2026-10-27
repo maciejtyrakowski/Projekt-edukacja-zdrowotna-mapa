@@ -1,0 +1,186 @@
+/* Wrocław dla zdrowia — style strony */
+:root {
+  --tlo: #f6f8f4;
+  --karta: #ffffff;
+  --tekst: #1d2a20;
+  --tekst-2: #4d5c51;
+  --linia: #dde5dc;
+  --zielony: #2e7d32;
+  --zielony-ciemny: #1f5a23;
+  --zielony-jasny: #e6f2e4;
+  --ostrzezenie-tlo: #fff4dd;
+  --ostrzezenie: #8a5a00;
+  --promien: 12px;
+  --cien: 0 1px 2px rgba(20, 40, 20, .06), 0 4px 14px rgba(20, 40, 20, .06);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  color: var(--tekst);
+  background: var(--tlo);
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--tlo); }
+a { color: var(--zielony-ciemny); }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+h2 { font-size: 1.2rem; }
+h3 { font-size: 1rem; }
+
+/* Nagłówek */
+.naglowek {
+  background: linear-gradient(180deg, #ffffff 0%, var(--zielony-jasny) 100%);
+  border-bottom: 1px solid var(--linia);
+}
+.naglowek__tresc { max-width: 1200px; margin: 0 auto; padding: 22px 16px 18px; }
+.naglowek__etykieta {
+  margin: 0 0 4px; font-size: .78rem; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--zielony);
+}
+.naglowek h1 { font-size: clamp(1.6rem, 5vw, 2.3rem); color: var(--zielony-ciemny); margin-bottom: .25em; }
+.naglowek__opis { margin: 0; max-width: 60ch; color: var(--tekst-2); }
+
+main { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+/* Filtry */
+.filtry {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  padding: 12px 0; background: var(--tlo);
+}
+/* Telefon: filtry w jednym przewijanym rzędzie, żeby nie zasłaniały mapy. */
+.filtry__lista {
+  display: flex; flex-wrap: nowrap; gap: 8px; width: 100%;
+  overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+.filtr { flex: 0 0 auto; }
+@media (min-width: 900px) {
+  .filtry { position: sticky; top: 0; z-index: 1000; }
+  .filtry__lista { flex-wrap: wrap; width: auto; overflow: visible; padding-bottom: 0; }
+}
+.filtr {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 40px; padding: 6px 12px 6px 6px;
+  border: 2px solid var(--kolor); border-radius: 999px;
+  background: var(--karta); color: var(--tekst);
+  font: inherit; font-size: .9rem; cursor: pointer;
+  transition: background-color .15s, opacity .15s;
+}
+.filtr__ikona {
+  display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--kolor);
+}
+.filtr__ile {
+  font-size: .78rem; font-weight: 600; color: var(--tekst-2);
+  background: var(--tlo); border-radius: 999px; padding: 0 7px;
+}
+.filtr[aria-pressed="false"] { opacity: .55; border-style: dashed; }
+.filtr[aria-pressed="false"] .filtr__ikona { background: #9aa59c; }
+.filtr:focus-visible, .przycisk:focus-visible, .pozycja__przycisk:focus-visible {
+  outline: 3px solid #f2b705; outline-offset: 2px;
+}
+.przycisk {
+  min-height: 40px; padding: 8px 16px; border: 0; border-radius: 999px;
+  background: var(--zielony); color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+}
+.przycisk:hover { background: var(--zielony-ciemny); }
+
+/* Układ mapa + lista */
+.uklad { display: grid; gap: 16px; }
+.mapa-ramka { position: relative; }
+#mapa {
+  height: 62vh; min-height: 340px;
+  border-radius: var(--promien); border: 1px solid var(--linia); box-shadow: var(--cien);
+  background: #e9eee6;
+}
+.mapa-uwaga {
+  position: absolute; left: 12px; right: 12px; top: 12px; z-index: 900; margin: 0;
+  padding: 10px 12px; border-radius: 8px; font-size: .9rem;
+  background: var(--ostrzezenie-tlo); color: var(--ostrzezenie);
+  box-shadow: var(--cien);
+}
+.mapa-podpowiedz { margin: 6px 0 0; font-size: .85rem; color: var(--ostrzezenie); }
+.blad { padding: 16px; }
+
+@media (min-width: 900px) {
+  .uklad { grid-template-columns: minmax(0, 1fr) 340px; align-items: start; }
+  #mapa { height: calc(100vh - 140px); max-height: 760px; }
+  .lista { max-height: calc(100vh - 140px); overflow: auto; }
+}
+
+/* Lista */
+.lista {
+  background: var(--karta); border: 1px solid var(--linia); border-radius: var(--promien);
+  box-shadow: var(--cien); padding: 14px;
+}
+.licznik { font-weight: 400; color: var(--tekst-2); font-size: .9rem; }
+.lista__miejsca { list-style: none; margin: 0; padding: 0; }
+.pozycja + .pozycja { border-top: 1px solid var(--linia); }
+.pozycja__przycisk {
+  display: flex; gap: 10px; width: 100%; padding: 10px 6px; text-align: left;
+  background: none; border: 0; border-radius: 8px; font: inherit; color: inherit; cursor: pointer;
+}
+.pozycja__przycisk:hover, .pozycja--aktywna .pozycja__przycisk { background: var(--zielony-jasny); }
+.pozycja__nr {
+  flex: 0 0 28px; height: 28px; border-radius: 50%; color: #fff; font-weight: 700;
+  display: grid; place-items: center; font-size: .85rem;
+}
+.pozycja__tekst { display: flex; flex-direction: column; min-width: 0; }
+.pozycja__nazwa { font-weight: 600; }
+.pozycja__adres { font-size: .85rem; color: var(--tekst-2); }
+.pozycja__znaczek {
+  align-self: flex-start; margin-top: 3px; font-size: .72rem; padding: 1px 7px; border-radius: 999px;
+  background: var(--ostrzezenie-tlo); color: var(--ostrzezenie);
+}
+
+/* Znaczniki na mapie */
+.wdz-znacznik { background: none; border: 0; }
+.wdz-znacznik__kolo {
+  display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
+  border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+}
+.wdz-znacznik__nr {
+  position: absolute; right: -6px; top: -6px; min-width: 18px; height: 18px; padding: 0 4px;
+  border-radius: 9px; background: #fff; color: #1d2a20; font: 700 11px/18px system-ui, sans-serif;
+  text-align: center; box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+}
+
+/* Okienko (popup) */
+.okienko { font-size: .9rem; }
+.okienko h3 { font-size: 1.05rem; margin: 2px 0 2px; }
+.okienko p { margin: 0 0 6px; }
+.okienko__kat {
+  display: inline-flex; align-items: center; gap: 4px; font-size: .75rem; font-weight: 600;
+  color: var(--kolor); text-transform: uppercase; letter-spacing: .03em;
+}
+.okienko__adres { color: var(--tekst-2); }
+.okienko__zdrowie { background: var(--zielony-jasny); padding: 6px 8px; border-radius: 8px; }
+.okienko__uwaga { font-size: .82rem; color: var(--tekst-2); }
+.okienko__ostrzezenie {
+  font-size: .8rem; background: var(--ostrzezenie-tlo); color: var(--ostrzezenie);
+  padding: 4px 8px; border-radius: 8px;
+}
+.okienko__zrodla, .okienko__link { font-size: .78rem; }
+.leaflet-popup-content { margin: 12px 14px; }
+
+/* Sekcja informacyjna */
+.info {
+  margin: 20px 0; background: var(--karta); border: 1px solid var(--linia);
+  border-radius: var(--promien); box-shadow: var(--cien); padding: 16px;
+}
+.info__siatka { display: grid; gap: 18px; }
+@media (min-width: 760px) { .info__siatka { grid-template-columns: repeat(3, 1fr); } }
+.info p { margin: 0 0 8px; }
+.legenda, .zrodla { list-style: none; margin: 0; padding: 0; }
+.legenda li { display: flex; align-items: center; gap: 10px; padding: 4px 0; }
+.legenda__znak { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; flex: 0 0 30px; }
+.zrodla li { padding: 3px 0; }
+.drobne { font-size: .82rem; color: var(--tekst-2); }
+
+.stopka {
+  max-width: 1200px; margin: 0 auto; padding: 8px 16px 28px;
+  font-size: .82rem; color: var(--tekst-2);
+}
+.stopka p { margin: 0 0 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}

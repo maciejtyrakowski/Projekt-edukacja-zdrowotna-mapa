@@ -1,0 +1,143 @@
+/* Wrocław dla zdrowia — arkusze do druku. Wymiary w mm odpowiadają papierowi. */
+:root {
+  --zielony: #2e7d32;
+  --zielony-ciemny: #1f5a23;
+  --tekst: #1d2a20;
+  --tekst-2: #4d5c51;
+  --linia: #cfd8cd;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
+  color: var(--tekst);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: #e7ebe5; }
+
+/* ---------- Panel sterowania (tylko ekran) ---------- */
+.sterowanie {
+  max-width: 900px; margin: 16px auto; padding: 16px 20px; background: #fff;
+  border-radius: 12px; box-shadow: 0 2px 10px rgba(0, 0, 0, .08); font-size: 15px;
+}
+.sterowanie h1 { font-size: 20px; margin: 0 0 10px; color: var(--zielony-ciemny); }
+.kroki { margin: 0; padding-left: 20px; display: grid; gap: 12px; }
+.kroki label, .kroki .etykieta { display: block; font-weight: 600; margin-bottom: 4px; }
+.kroki label.radio { font-weight: 400; display: inline-flex; gap: 6px; margin-right: 16px; }
+.kroki input[type="url"], .kroki input[type="text"] {
+  width: 100%; max-width: 560px; padding: 8px 10px; font: inherit;
+  border: 1px solid #b9c4b6; border-radius: 8px;
+}
+.komunikat { display: block; font-size: 13px; margin-top: 4px; color: var(--tekst-2); }
+.komunikat.blad { color: #b3261e; }
+.komunikat.ok { color: var(--zielony); }
+.drukuj {
+  padding: 10px 22px; border: 0; border-radius: 999px; background: var(--zielony);
+  color: #fff; font: inherit; font-weight: 700; cursor: pointer;
+}
+.sterowanie details { margin-top: 12px; font-size: 14px; }
+.sterowanie summary { cursor: pointer; font-weight: 600; }
+
+/* ---------- Arkusz papieru ---------- */
+.arkusz {
+  position: relative; overflow: hidden; background: #fff;
+  margin: 0 auto 16px; box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+  page-break-after: always; break-after: page;
+}
+.arkusz:last-child { page-break-after: auto; break-after: auto; }
+.arkusz--a4 { width: 297mm; height: 210mm; }
+.arkusz--a3 { width: 420mm; height: 297mm; }
+
+.arkusz > * { position: absolute; }
+
+/* Nagłówek */
+.tytul { left: 10mm; top: 8mm; right: 10mm; height: 17mm; display: flex; align-items: flex-end; gap: 6mm; }
+.tytul h1 { margin: 0; font-size: 26pt; line-height: 1; color: var(--zielony-ciemny); letter-spacing: -.01em; }
+.tytul p { margin: 0 0 1mm; font-size: 10.5pt; color: var(--tekst-2); }
+.tytul__czesc {
+  margin-left: auto !important; font-size: 8.5pt !important; padding: 1mm 3mm;
+  border: .3mm solid var(--linia); border-radius: 3mm; white-space: nowrap;
+}
+.pasek { left: 10mm; right: 10mm; top: 26mm; height: 1mm; background: var(--zielony); border-radius: 1mm; }
+
+/* Mapa */
+/* outline zamiast border: border zmniejszałby wnętrze mapy i psuł zszycie połówek */
+.mapa { background: #eef1ec; outline: .3mm solid #9aa59c; }
+.mapa .leaflet-control-attribution { font-size: 7pt; background: rgba(255, 255, 255, .9); }
+.mapa .leaflet-control-scale-line { font-size: 7pt; }
+
+/* Znacznik do druku */
+.wdz-druk-znacznik { background: none; border: 0; }
+.wdz-druk-znacznik span {
+  display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%;
+  border: 2.5px solid #fff; color: #fff; font: 700 12px/1 system-ui, Arial, sans-serif;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .45);
+}
+
+/* Linia cięcia i zakładka */
+.ciecie { width: 0; border-left: .35mm dashed #333; }
+.ciecie-opis { font-size: 7pt; color: #333; white-space: nowrap; }
+.zakladka {
+  background: repeating-linear-gradient(135deg, rgba(46, 125, 50, .22) 0 2mm, rgba(255, 255, 255, .55) 2mm 4mm);
+  border-right: .4mm solid var(--zielony-ciemny); z-index: 500;
+  display: flex; align-items: center; justify-content: center;
+}
+.zakladka span {
+  writing-mode: vertical-rl; transform: rotate(180deg); font-size: 8pt; font-weight: 700;
+  color: var(--zielony-ciemny); background: rgba(255, 255, 255, .85); padding: 2mm 1mm; border-radius: 1mm;
+}
+.znak { width: 0; height: 0; border-left: 2mm solid transparent; border-right: 2mm solid transparent; }
+.znak--dol { border-top: 3mm solid #333; }
+.znak--gora { border-bottom: 3mm solid #333; }
+
+/* Panel z legendą, listą, QR */
+.panel { display: flex; flex-direction: column; gap: 2mm; font-size: 7.4pt; line-height: 1.3; }
+.panel h2 {
+  font-size: 9pt; margin: 0 0 1.5mm; color: var(--zielony-ciemny);
+  text-transform: uppercase; letter-spacing: .05em;
+}
+.legenda-druk { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 4mm; margin: 0; padding: 0; list-style: none; }
+.legenda-druk li { display: flex; align-items: center; gap: 2mm; font-size: 7.6pt; }
+.legenda-druk .znak-kat {
+  flex: 0 0 6mm; height: 6mm; border-radius: 50%; display: grid; place-items: center;
+}
+.lista-druk { columns: 2; column-gap: 5mm; margin: 0; padding: 0; list-style: none; }
+.lista-druk li { break-inside: avoid; display: flex; gap: 1.8mm; margin-bottom: 1.4mm; }
+.lista-druk .nr {
+  flex: 0 0 4.6mm; height: 4.6mm; border-radius: 50%; color: #fff; font-weight: 700;
+  font-size: 7pt; display: grid; place-items: center; margin-top: .2mm;
+}
+.lista-druk strong { display: block; font-size: 7.8pt; }
+.lista-druk .adres { color: var(--tekst-2); display: block; }
+.lista-druk .przybl { color: #8a5a00; font-style: italic; }
+
+.qr-blok { display: flex; gap: 4mm; align-items: center; border: .3mm solid var(--linia); border-radius: 2mm; padding: 2mm; }
+.qr { flex: 0 0 27mm; width: 27mm; height: 27mm; display: grid; place-items: center; }
+.qr svg { width: 27mm; height: 27mm; display: block; }
+.qr--brak {
+  border: .4mm dashed #b3261e; color: #b3261e; font-size: 7pt; text-align: center; padding: 2mm;
+}
+.qr-podpis strong { display: block; font-size: 10pt; color: var(--zielony-ciemny); line-height: 1.2; margin-bottom: 1.5mm; }
+.qr-podpis .url { font-size: 7pt; color: var(--tekst-2); word-break: break-all; }
+
+.zrodla-druk { font-size: 6.6pt; color: var(--tekst-2); border-top: .3mm solid var(--linia); padding-top: 2mm; margin-top: auto; }
+.zrodla-druk p { margin: 0 0 1mm; }
+
+/* ---------- Druk ---------- */
+@media print {
+  body { background: #fff; }
+  .sterowanie { display: none !important; }
+  .arkusz { margin: 0; box-shadow: none; }
+  .leaflet-control-zoom { display: none; }
+}
+
+/* A3: więcej miejsca w panelu — większe litery i kod QR */
+.arkusz--a3 .panel { font-size: 9pt; gap: 5mm; }
+.arkusz--a3 .panel h2 { font-size: 11pt; }
+.arkusz--a3 .legenda-druk li { font-size: 9pt; }
+.arkusz--a3 .lista-druk li { margin-bottom: 2.2mm; }
+.arkusz--a3 .lista-druk strong { font-size: 9.6pt; }
+.arkusz--a3 .lista-druk .nr { flex-basis: 5.5mm; height: 5.5mm; font-size: 8pt; }
+.arkusz--a3 .qr, .arkusz--a3 .qr svg { flex-basis: 38mm; width: 38mm; height: 38mm; }
+.arkusz--a3 .qr-podpis strong { font-size: 12pt; }
+.arkusz--a3 .zrodla-druk { font-size: 7.6pt; }
+.arkusz--a3 .tytul h1 { font-size: 34pt; }
+.arkusz--a3 .tytul p { font-size: 13pt; }

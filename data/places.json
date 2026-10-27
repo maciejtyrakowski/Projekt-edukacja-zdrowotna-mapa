@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "tytul": "Wrocław dla zdrowia — mapa miejsc prozdrowotnych",
+    "data_weryfikacji": "2026-10-27",
+    "uwaga": "Adresy pochodzą z oficjalnych stron miasta (wroclaw.pl) lub z Wikipedii, zgodnie z polem 'zrodla'. Współrzędne oznaczone jako 'przyblizone' NIE zostały potwierdzone w źródle: przed drukiem sprawdź je skryptem tools/sprawdz_wspolrzedne.py albo ręcznie.",
+    "kategorie": {
+      "zielen": {
+        "nazwa": "Parki, lasy i tereny spacerowe",
+        "kolor": "#2E8B3E",
+        "ikona": "drzewo"
+      },
+      "woda": {
+        "nazwa": "Baseny i kąpieliska",
+        "kolor": "#1F6FD1",
+        "ikona": "fala"
+      },
+      "sport": {
+        "nazwa": "Boiska, bieżnie i obiekty sportowe",
+        "kolor": "#E07B12",
+        "ikona": "bieg"
+      },
+      "inne": {
+        "nazwa": "Inne miejsca zdrowia i rekreacji",
+        "kolor": "#7B3FB5",
+        "ikona": "serce"
+      }
+    },
+    "autor": "UZUPEŁNIJ: imię i nazwisko, klasa",
+    "zrodla_ogolne": [
+      {
+        "nazwa": "Podkład mapy: © OpenStreetMap contributors (licencja ODbL)",
+        "url": "https://www.openstreetmap.org/copyright"
+      },
+      {
+        "nazwa": "Urząd Miejski Wrocławia — serwis wroclaw.pl",
+        "url": "https://www.wroclaw.pl/"
+      },
+      {
+        "nazwa": "System Informacji Przestrzennej Wrocławia (do weryfikacji adresów)",
+        "url": "https://gis.um.wroc.pl/mapy/mapa_podst/"
+      }
+    ]
+  },
+  "miejsca": [
+    {
+      "id": 1,
+      "nazwa": "Park Szczytnicki",
+      "kategoria": "zielen",
+      "adres": "Śródmieście, na wschód od pl. Grunwaldzkiego (okolice Hali Stulecia)",
+      "opis": "Jeden z najstarszych i największych parków Wrocławia, założony w 1783 r. w stylu angielskim. Na jego terenie jest m.in. Ogród Japoński i drewniany kościółek z XVII w.",
+      "krotko": "Zabytkowy park z 1783 r. z Ogrodem Japońskim i długimi alejkami.",
+      "korzysc": "Długie alejki sprzyjają spacerom, bieganiu i jeździe na rowerze, a kontakt z zielenią pomaga obniżyć stres.",
+      "uwagi": "Ogród Japoński w parku ma własne godziny otwarcia i zasady wstępu — sprawdź je przed wizytą.",
+      "wspolrzedne": {
+        "lat": 51.1115,
+        "lon": 17.08,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "Wikipedia (EN): Szczytnicki Park",
+          "url": "https://en.wikipedia.org/wiki/Szczytnicki_Park"
+        }
+      ],
+      "geokod": [
+        "Park Szczytnicki, Wrocław"
+      ]
+    },
+    {
+      "id": 2,
+      "nazwa": "Park Południowy",
+      "kategoria": "zielen",
+      "adres": "Krzyki, między ul. Powstańców Śląskich a ul. Sudecką",
+      "opis": "Park o powierzchni ok. 25 ha ze stawem, tarasem widokowym, Altaną Bendera i pomnikiem Fryderyka Chopina. Są w nim też place zabaw i miejsce do gry w bule.",
+      "krotko": "Park (ok. 25 ha) ze stawem, altaną i placami zabaw.",
+      "korzysc": "Alejki i polany zachęcają do spacerów i biegania, a place zabaw do ruchu na świeżym powietrzu całe rodziny.",
+      "uwagi": null,
+      "wspolrzedne": {
+        "lat": 51.0795,
+        "lon": 17.015,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Park Południowy",
+          "url": "https://www.wroclaw.pl/zielony-wroclaw/park-poludniowy-wroclaw"
+        }
+      ],
+      "geokod": [
+        "Park Południowy, Wrocław"
+      ]
+    },
+    {
+      "id": 3,
+      "nazwa": "Park Grabiszyński",
+      "kategoria": "zielen",
+      "adres": "Grabiszyn, między ul. Grabiszyńską, al. Hallera a rzeką Ślęzą",
+      "opis": "Park o powierzchni blisko 48 ha, powstały na terenie dawnych cmentarzy. Ma aleje lipowe, polany, place zabaw i siłownie dla dorosłych.",
+      "krotko": "Park (blisko 48 ha) z polanami, placami zabaw i siłowniami plenerowymi.",
+      "korzysc": "Duży, zielony teren do spacerów i ćwiczeń; siłownie plenerowe pozwalają trenować bez opłat za karnet.",
+      "uwagi": null,
+      "wspolrzedne": {
+        "lat": 51.093,
+        "lon": 16.986,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Park Grabiszyński",
+          "url": "https://www.wroclaw.pl/zielony-wroclaw/park-grabiszynski-wroclaw"
+        }
+      ],
+      "geokod": [
+        "Park Grabiszyński, Wrocław"
+      ]
+    },
+    {
+      "id": 4,
+      "nazwa": "Kąpielisko Morskie Oko",
+      "kategoria": "woda",
+      "adres": "ul. Chopina 27",
+      "opis": "Miejskie kąpielisko na świeżym powietrzu, czynne latem.",
+      "krotko": "Miejskie kąpielisko na świeżym powietrzu, sezonowe i płatne.",
+      "korzysc": "Pływanie poprawia wydolność serca i płuc oraz angażuje wiele mięśni, nie obciążając przy tym stawów.",
+      "uwagi": "Kąpielisko sezonowe i płatne. W sezonie 2026 bilet normalny kosztował 20 zł (pn–pt) i 25 zł (weekend). Ceny i terminy na kolejny sezon sprawdź na wroclaw.pl.",
+      "wspolrzedne": {
+        "lat": 51.116,
+        "lon": 17.09,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        },
+        {
+          "nazwa": "wroclaw.pl: Kąpieliska — ceny i godziny (28.06.2026)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/kapieliska-we-wroclawiu-morskie-oko-i-park-glinianki-atrakcje-ceny-godziny-otwarcia"
+        }
+      ],
+      "geokod": [
+        "Kąpielisko Morskie Oko, Wrocław",
+        "Fryderyka Chopina 27, Wrocław"
+      ]
+    },
+    {
+      "id": 5,
+      "nazwa": "Aquapark Wrocław",
+      "kategoria": "woda",
+      "adres": "ul. Borowska 99",
+      "opis": "Park wodny z basenami krytymi i odkrytymi, basenem sportowym i saunami.",
+      "krotko": "Baseny kryte i odkryte, basen sportowy, sauny; obiekt płatny.",
+      "korzysc": "Basen sportowy umożliwia regularny trening pływacki przez cały rok, niezależnie od pogody.",
+      "uwagi": "Obiekt płatny. Aktualne ceny i godziny sprawdź na stronie obiektu.",
+      "wspolrzedne": {
+        "lat": 51.091,
+        "lon": 17.0322,
+        "status": "zrodlo",
+        "zrodlo": "Wikipedia (EN): Aquapark Wrocław"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        },
+        {
+          "nazwa": "Wikipedia (EN): Aquapark Wrocław",
+          "url": "https://en.wikipedia.org/wiki/Aquapark_Wroc%C5%82aw"
+        }
+      ],
+      "geokod": [
+        "Borowska 99, Wrocław"
+      ]
+    },
+    {
+      "id": 6,
+      "nazwa": "Kąpielisko Park Glinianki",
+      "kategoria": "woda",
+      "adres": "ul. Kosmonautów 1",
+      "opis": "Kąpielisko w zachodniej części Wrocławia, kilka minut od stadionu Tarczyński Arena.",
+      "krotko": "Kąpielisko w zachodniej części miasta, sezonowe i płatne.",
+      "korzysc": "Pływanie i ruch na świeżym powietrzu wzmacniają kondycję i pomagają utrzymać prawidłową masę ciała.",
+      "uwagi": "Kąpielisko sezonowe i płatne. W sezonie 2026 bilet normalny kosztował 21 zł (pn–pt) i 27 zł (weekend). Ceny na kolejny sezon sprawdź na wroclaw.pl.",
+      "wspolrzedne": {
+        "lat": 51.13,
+        "lon": 16.965,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        },
+        {
+          "nazwa": "wroclaw.pl: Kąpieliska — ceny i godziny (28.06.2026)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/kapieliska-we-wroclawiu-morskie-oko-i-park-glinianki-atrakcje-ceny-godziny-otwarcia"
+        }
+      ],
+      "geokod": [
+        "Kosmonautów 1, Wrocław",
+        "Park Glinianki, Wrocław"
+      ]
+    },
+    {
+      "id": 7,
+      "nazwa": "Pływalnia Orbita",
+      "kategoria": "woda",
+      "adres": "ul. Wejherowska 34",
+      "opis": "Pływalnia wymieniona na miejskiej liście basenów we Wrocławiu.",
+      "krotko": "Pływalnia z miejskiej listy basenów.",
+      "korzysc": "Pływanie to ruch o niskim obciążeniu stawów, dobry dla osób w każdym wieku.",
+      "uwagi": "Godziny i ceny sprawdź na stronie obiektu.",
+      "wspolrzedne": {
+        "lat": 51.1215,
+        "lon": 16.9935,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        }
+      ],
+      "geokod": [
+        "Wejherowska 34, Wrocław"
+      ]
+    },
+    {
+      "id": 8,
+      "nazwa": "Stadion Olimpijski",
+      "kategoria": "sport",
+      "adres": "al. Paderewskiego 35",
+      "opis": "Miejski stadion, na którym grają m.in. żużlowcy Sparty Wrocław i drużyna futbolu amerykańskiego Panthers Wrocław.",
+      "krotko": "Stadion żużla i futbolu amerykańskiego (obiekt klubowy).",
+      "korzysc": "Miejsce zawodów i treningów sportowych, które promuje aktywność fizyczną.",
+      "uwagi": "Nie potwierdzono, czy stadion jest ogólnodostępny do rekreacji. To przede wszystkim obiekt dla klubów i imprez.",
+      "wspolrzedne": {
+        "lat": 51.11944,
+        "lon": 17.09667,
+        "status": "zrodlo",
+        "zrodlo": "Wikipedia (EN): Olympic Stadium (Wrocław)"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Stadiony sportowe we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/stadiony-sportowe-we-wroclawiu"
+        },
+        {
+          "nazwa": "Wikipedia (EN): Olympic Stadium (Wrocław)",
+          "url": "https://en.wikipedia.org/wiki/Olympic_Stadium_(Wroc%C5%82aw)"
+        }
+      ],
+      "geokod": [
+        "Stadion Olimpijski, Wrocław"
+      ]
+    },
+    {
+      "id": 9,
+      "nazwa": "Siłownia plenerowa przy Tarczyński Arena",
+      "kategoria": "sport",
+      "adres": "al. Śląska 1 (przy stadionie Tarczyński Arena)",
+      "opis": "Siłownia plenerowa otwarta 14.10.2026, z 26 urządzeniami i zestawami treningowymi.",
+      "krotko": "26 urządzeń do ćwiczeń na świeżym powietrzu; bezpłatna.",
+      "korzysc": "Trening siłowy na świeżym powietrzu wzmacnia mięśnie i kości. Siłownia jest bezpłatna, więc korzystać może każdy.",
+      "uwagi": "Według wroclaw.pl siłownia jest ogólnodostępna i bezpłatna. Znacznik wskazuje stadion; dokładne miejsce siłowni do sprawdzenia na miejscu.",
+      "wspolrzedne": {
+        "lat": 51.14111,
+        "lon": 16.94389,
+        "status": "zrodlo",
+        "zrodlo": "Wikipedia (EN): Wrocław Stadium (współrzędne stadionu)"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Największa siłownia plenerowa (14.10.2026)",
+          "url": "https://www.wroclaw.pl/sport/najwieksza-silownia-plenerowa-wk-dzik-w-polsce-otwarta-we-wroclawiu-26-urzadzen-bezplatny-dostep-tlumy-na-inauguracji-zdjecia"
+        },
+        {
+          "nazwa": "Wikipedia (EN): Wrocław Stadium",
+          "url": "https://en.wikipedia.org/wiki/Wroc%C5%82aw_Stadium"
+        }
+      ],
+      "geokod": [
+        "Tarczyński Arena, Wrocław"
+      ]
+    },
+    {
+      "id": 10,
+      "nazwa": "Stadion Sportowy Sztabowa",
+      "kategoria": "sport",
+      "adres": "ul. Sztabowa 101",
+      "opis": "Stadion sportowy z miejskiej listy stadionów Wrocławia.",
+      "krotko": "Stadion sportowy z miejskiej listy stadionów.",
+      "korzysc": "Obiekt do treningów i zawodów sportowych.",
+      "uwagi": "Nie potwierdzono, czy obiekt jest dostępny dla mieszkańców poza zajęciami klubowymi.",
+      "wspolrzedne": {
+        "lat": 51.087,
+        "lon": 17.006,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Stadiony sportowe we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/stadiony-sportowe-we-wroclawiu"
+        }
+      ],
+      "geokod": [
+        "Sztabowa 101, Wrocław"
+      ]
+    },
+    {
+      "id": 11,
+      "nazwa": "Wrocławskie Centrum SPA",
+      "kategoria": "inne",
+      "adres": "ul. Teatralna 10-12",
+      "opis": "Obiekt z basenem w centrum miasta, wymieniony na miejskiej liście basenów.",
+      "krotko": "Obiekt z basenem w centrum miasta.",
+      "korzysc": "Pływanie i relaks w wodzie pomagają się zregenerować i obniżyć napięcie mięśni.",
+      "uwagi": "Godziny i ceny sprawdź na stronie obiektu.",
+      "wspolrzedne": {
+        "lat": 51.1053,
+        "lon": 17.0365,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        }
+      ],
+      "geokod": [
+        "Teatralna 10, Wrocław"
+      ]
+    },
+    {
+      "id": 12,
+      "nazwa": "Mała Sobótka (Górka Skarbowców)",
+      "kategoria": "inne",
+      "adres": "Park Grabiszyński (część przy rzece Ślęzie)",
+      "opis": "Sztucznie usypane wzniesienie z końca XIX w. o wysokości 136 m n.p.m. Dziś korzystają z niego głównie rowerzyści, a zimą saneczkarze.",
+      "krotko": "Wzniesienie (136 m n.p.m.) dla rowerzystów, zimą dla saneczkarzy.",
+      "korzysc": "Podbiegi i podjazdy rowerowe to dobry trening wytrzymałości, a zimą sanki to ruch dla całej rodziny.",
+      "uwagi": null,
+      "wspolrzedne": {
+        "lat": 51.0895,
+        "lon": 16.98,
+        "status": "przyblizone",
+        "zrodlo": null
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Park Grabiszyński",
+          "url": "https://www.wroclaw.pl/zielony-wroclaw/park-grabiszynski-wroclaw"
+        }
+      ],
+      "geokod": [
+        "Mała Sobótka, Wrocław",
+        "Górka Skarbowców, Wrocław"
+      ]
+    }
+  ]
+}
