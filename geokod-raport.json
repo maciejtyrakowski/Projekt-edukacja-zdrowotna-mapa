@@ -1,0 +1,1119 @@
+[
+  {
+    "id": 1,
+    "nazwa": "Park Szczytnicki",
+    "zapytania": [
+      {
+        "q": "Park Szczytnicki, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Park Szczytnicki, Zacisze-Zalesie-Szczytniki, Wrocław, województwo dolnośląskie, 51-622, Polska",
+            "lat": "51.1149755",
+            "lon": "17.0821140",
+            "category": "leisure",
+            "type": "park",
+            "osm_type": "relation",
+            "osm_id": 12137435,
+            "boundingbox": [
+              "51.1049572",
+              "51.1196823",
+              "17.0738316",
+              "17.0903081"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nazwa": "Park Południowy",
+    "zapytania": [
+      {
+        "q": "Park Południowy, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Park Południowy, Borek, Wrocław, województwo dolnośląskie, 53-141, Polska",
+            "lat": "51.0759070",
+            "lon": "17.0111696",
+            "category": "leisure",
+            "type": "park",
+            "osm_type": "way",
+            "osm_id": 32230185,
+            "boundingbox": [
+              "51.0719729",
+              "51.0796280",
+              "17.0073520",
+              "17.0145668"
+            ]
+          },
+          {
+            "display_name": "Park Południowy, Andrzeja Waligórskiego, Borek, Wrocław, województwo dolnośląskie, 53-141, Polska",
+            "lat": "51.0726239",
+            "lon": "17.0107359",
+            "category": "highway",
+            "type": "bus_stop",
+            "osm_type": "node",
+            "osm_id": 1701716681,
+            "boundingbox": [
+              "51.0725739",
+              "51.0726739",
+              "17.0106859",
+              "17.0107859"
+            ]
+          },
+          {
+            "display_name": "Park Południowy, Ślężna, Borek, Wrocław, województwo dolnośląskie, 53-116, Polska",
+            "lat": "51.0727238",
+            "lon": "17.0144858",
+            "category": "railway",
+            "type": "tram_stop",
+            "osm_type": "node",
+            "osm_id": 370680447,
+            "boundingbox": [
+              "51.0726738",
+              "51.0727738",
+              "17.0144358",
+              "17.0145358"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nazwa": "Park Grabiszyński",
+    "zapytania": [
+      {
+        "q": "Park Grabiszyński, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Park Grabiszyński, Grabiszyn, Grabiszyn-Grabiszynek, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.0867095",
+            "lon": "16.9780843",
+            "category": "leisure",
+            "type": "park",
+            "osm_type": "relation",
+            "osm_id": 6629819,
+            "boundingbox": [
+              "51.0808272",
+              "51.0925612",
+              "16.9716013",
+              "16.9838636"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nazwa": "Kąpielisko Morskie Oko",
+    "zapytania": [
+      {
+        "q": "Kąpielisko Morskie Oko, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Kąpielisko Morskie Oko, Zalesie, Zacisze-Zalesie-Szczytniki, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.1232536",
+            "lon": "17.0828961",
+            "category": "landuse",
+            "type": "recreation_ground",
+            "osm_type": "way",
+            "osm_id": 310593115,
+            "boundingbox": [
+              "51.1206686",
+              "51.1258109",
+              "17.0804892",
+              "17.0858814"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Fryderyka Chopina 27, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "27, Fryderyka Chopina, Zalesie, Zacisze-Zalesie-Szczytniki, Wrocław, województwo dolnośląskie, 51-609, Polska",
+            "lat": "51.1222323",
+            "lon": "17.0839662",
+            "category": "place",
+            "type": "house",
+            "osm_type": "node",
+            "osm_id": 1200340520,
+            "boundingbox": [
+              "51.1221823",
+              "51.1222823",
+              "17.0839162",
+              "17.0840162"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nazwa": "Aquapark Wrocław",
+    "zapytania": [
+      {
+        "q": "Borowska 99, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Aquapark Wrocław, 99, Borowska, Glinianki, Huby, Wrocław, województwo dolnośląskie, 50-558, Polska",
+            "lat": "51.0905868",
+            "lon": "17.0321231",
+            "category": "leisure",
+            "type": "water_park",
+            "osm_type": "way",
+            "osm_id": 120932304,
+            "boundingbox": [
+              "51.0892227",
+              "51.0917874",
+              "17.0307479",
+              "17.0334253"
+            ]
+          },
+          {
+            "display_name": "99, Borowska, Glinianki, Huby, Wrocław, województwo dolnośląskie, 50-531, Polska",
+            "lat": "51.0908961",
+            "lon": "17.0323477",
+            "category": "building",
+            "type": "civic",
+            "osm_type": "way",
+            "osm_id": 100932992,
+            "boundingbox": [
+              "51.0903245",
+              "51.0915965",
+              "17.0316089",
+              "17.0332032"
+            ]
+          },
+          {
+            "display_name": "99, Borowska, Glinianki, Huby, Wrocław, województwo dolnośląskie, 50-558, Polska",
+            "lat": "51.0905435",
+            "lon": "17.0322354",
+            "category": "leisure",
+            "type": "sauna",
+            "osm_type": "node",
+            "osm_id": 12039508669,
+            "boundingbox": [
+              "51.0904935",
+              "51.0905935",
+              "17.0321854",
+              "17.0322854"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nazwa": "Kąpielisko Park Glinianki",
+    "zapytania": [
+      {
+        "q": "Kosmonautów 1, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Osiedle Kosmonautów, Gądów, Gądów-Popowice Południowe, Wrocław, województwo dolnośląskie, 54-130, Polska",
+            "lat": "51.1255556",
+            "lon": "16.9705556",
+            "category": "place",
+            "type": "neighbourhood",
+            "osm_type": "node",
+            "osm_id": 3009732356,
+            "boundingbox": [
+              "51.1155556",
+              "51.1355556",
+              "16.9605556",
+              "16.9805556"
+            ]
+          },
+          {
+            "display_name": "Kosmonautów, Nowe Żerniki, Leśnica, Wrocław, województwo dolnośląskie, 54-414, Polska",
+            "lat": "51.1394047",
+            "lon": "16.9245363",
+            "category": "highway",
+            "type": "primary",
+            "osm_type": "way",
+            "osm_id": 1205418223,
+            "boundingbox": [
+              "51.1390355",
+              "51.1397719",
+              "16.9216201",
+              "16.9274523"
+            ]
+          },
+          {
+            "display_name": "Kosmonautów, Nowe Żerniki, Leśnica, Wrocław, województwo dolnośląskie, 54-127, Polska",
+            "lat": "51.1388619",
+            "lon": "16.9288195",
+            "category": "highway",
+            "type": "primary",
+            "osm_type": "way",
+            "osm_id": 1132553426,
+            "boundingbox": [
+              "51.1387740",
+              "51.1389508",
+              "16.9281189",
+              "16.9295203"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Park Glinianki, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Kąpielisko Glinianki, Leśnica, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.1412847",
+            "lon": "16.9333886",
+            "category": "landuse",
+            "type": "recreation_ground",
+            "osm_type": "way",
+            "osm_id": 291860305,
+            "boundingbox": [
+              "51.1385173",
+              "51.1438218",
+              "16.9302176",
+              "16.9378140"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nazwa": "Pływalnia Orbita",
+    "zapytania": [
+      {
+        "q": "Wejherowska 34, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "34, Wejherowska, Popowice Północne, Popowice, Pilczyce-Kozanów-Popowice Północne, Wrocław, województwo dolnośląskie, 54-239, Polska",
+            "lat": "51.1321094",
+            "lon": "16.9875029",
+            "category": "place",
+            "type": "house",
+            "osm_type": "node",
+            "osm_id": 1200491404,
+            "boundingbox": [
+              "51.1320594",
+              "51.1321594",
+              "16.9874529",
+              "16.9875529"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nazwa": "Stadion Olimpijski",
+    "zapytania": [
+      {
+        "q": "Stadion Olimpijski, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Stadion Olimpijski, Kanałowa, Zalesie, Zacisze-Zalesie-Szczytniki, Wrocław, województwo dolnośląskie, 51-684, Polska",
+            "lat": "51.1195926",
+            "lon": "17.0966604",
+            "category": "leisure",
+            "type": "stadium",
+            "osm_type": "way",
+            "osm_id": 224222485,
+            "boundingbox": [
+              "51.1184140",
+              "51.1206940",
+              "17.0955653",
+              "17.0977613"
+            ]
+          },
+          {
+            "display_name": "Stadion Olimpijski, aleja Ignacego Jana Paderewskiego, Zalesie, Zacisze-Zalesie-Szczytniki, Wrocław, województwo dolnośląskie, 51-612, Polska",
+            "lat": "51.1168350",
+            "lon": "17.0899890",
+            "category": "railway",
+            "type": "tram_stop",
+            "osm_type": "node",
+            "osm_id": 6090439604,
+            "boundingbox": [
+              "51.1167850",
+              "51.1168850",
+              "17.0899390",
+              "17.0900390"
+            ]
+          },
+          {
+            "display_name": "Stadion Olimpijski, Kanałowa, Zalesie, Zacisze-Zalesie-Szczytniki, Wrocław, województwo dolnośląskie, 51-684, Polska",
+            "lat": "51.1180422",
+            "lon": "17.0956331",
+            "category": "amenity",
+            "type": "bicycle_rental",
+            "osm_type": "node",
+            "osm_id": 9737342310,
+            "boundingbox": [
+              "51.1179922",
+              "51.1180922",
+              "17.0955831",
+              "17.0956831"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nazwa": "Siłownia plenerowa przy Tarczyński Arena",
+    "zapytania": [
+      {
+        "q": "Tarczyński Arena, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Tarczyński Arena, 1, aleja Śląska, Pilczyce, Pilczyce-Kozanów-Popowice Północne, Wrocław, województwo dolnośląskie, 54-118, Polska",
+            "lat": "51.1411861",
+            "lon": "16.9438067",
+            "category": "leisure",
+            "type": "stadium",
+            "osm_type": "way",
+            "osm_id": 122274942,
+            "boundingbox": [
+              "51.1399246",
+              "51.1423623",
+              "16.9422165",
+              "16.9454032"
+            ]
+          },
+          {
+            "display_name": "Tarczyński Arena (Królewiecka), Pilczycka, Maślice, Wrocław, województwo dolnośląskie, 54-131, Polska",
+            "lat": "51.1433610",
+            "lon": "16.9494559",
+            "category": "railway",
+            "type": "platform",
+            "osm_type": "way",
+            "osm_id": 158077392,
+            "boundingbox": [
+              "51.1430438",
+              "51.1436830",
+              "16.9483767",
+              "16.9505336"
+            ]
+          },
+          {
+            "display_name": "Tarczyński Arena (Królewiecka), Pilczycka, Maślice, Wrocław, województwo dolnośląskie, 54-131, Polska",
+            "lat": "51.1440187",
+            "lon": "16.9496630",
+            "category": "highway",
+            "type": "bus_stop",
+            "osm_type": "node",
+            "osm_id": 1701718266,
+            "boundingbox": [
+              "51.1439687",
+              "51.1440687",
+              "16.9496130",
+              "16.9497130"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nazwa": "Stadion Sportowy Sztabowa",
+    "zapytania": [
+      {
+        "q": "Sztabowa 101, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "101, Sztabowa, Powstańców Śląskich, Wrocław, województwo dolnośląskie, 53-310, Polska",
+            "lat": "51.0863798",
+            "lon": "17.0210780",
+            "category": "place",
+            "type": "house",
+            "osm_type": "node",
+            "osm_id": 1200341587,
+            "boundingbox": [
+              "51.0863298",
+              "51.0864298",
+              "17.0210280",
+              "17.0211280"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nazwa": "Wrocławskie Centrum SPA",
+    "zapytania": [
+      {
+        "q": "Teatralna 10, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Instytut Rehabilitacji Medycznej i Sportowej, 10-12, Teatralna, Dzielnica Czterech Wyznań, Stare Miasto, Wrocław, województwo dolnośląskie, 50-055, Polska",
+            "lat": "51.1056721",
+            "lon": "17.0344186",
+            "category": "healthcare",
+            "type": "rehabilitation",
+            "osm_type": "node",
+            "osm_id": 6372143385,
+            "boundingbox": [
+              "51.1056221",
+              "51.1057221",
+              "17.0343686",
+              "17.0344686"
+            ]
+          },
+          {
+            "display_name": "10-12, Teatralna, Dzielnica Czterech Wyznań, Stare Miasto, Wrocław, województwo dolnośląskie, 50-055, Polska",
+            "lat": "51.1054315",
+            "lon": "17.0346012",
+            "category": "place",
+            "type": "house",
+            "osm_type": "node",
+            "osm_id": 1200502308,
+            "boundingbox": [
+              "51.1053815",
+              "51.1054815",
+              "17.0345512",
+              "17.0346512"
+            ]
+          },
+          {
+            "display_name": "Hair Studio, 10-12, Teatralna, Dzielnica Czterech Wyznań, Stare Miasto, Wrocław, województwo dolnośląskie, 50-055, Polska",
+            "lat": "51.1054176",
+            "lon": "17.0347448",
+            "category": "shop",
+            "type": "hairdresser",
+            "osm_type": "node",
+            "osm_id": 5316920499,
+            "boundingbox": [
+              "51.1053676",
+              "51.1054676",
+              "17.0346948",
+              "17.0347948"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "nazwa": "Mała Sobótka (Górka Skarbowców)",
+    "zapytania": [
+      {
+        "q": "Mała Sobótka, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Mała Sobótka, Wrocław, województwo dolnośląskie, 53-149, Polska",
+            "lat": "51.0817115",
+            "lon": "16.9969884",
+            "category": "natural",
+            "type": "peak",
+            "osm_type": "node",
+            "osm_id": 374456809,
+            "boundingbox": [
+              "51.0816615",
+              "51.0817615",
+              "16.9969384",
+              "16.9970384"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Górka Skarbowców, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Mała Sobótka, Wrocław, województwo dolnośląskie, 53-149, Polska",
+            "lat": "51.0817115",
+            "lon": "16.9969884",
+            "category": "natural",
+            "type": "peak",
+            "osm_type": "node",
+            "osm_id": 374456809,
+            "boundingbox": [
+              "51.0816615",
+              "51.0817615",
+              "16.9969384",
+              "16.9970384"
+            ]
+          },
+          {
+            "display_name": "Górka Skarbowców, Grabiszynek, Grabiszyn-Grabiszynek, Wrocław, województwo dolnośląskie, 53-149, Polska",
+            "lat": "51.0840406",
+            "lon": "16.9945834",
+            "category": "leisure",
+            "type": "park",
+            "osm_type": "way",
+            "osm_id": 120932357,
+            "boundingbox": [
+              "51.0804614",
+              "51.0874578",
+              "16.9837783",
+              "16.9988647"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "nazwa": "Las Mokrzański",
+    "zapytania": [
+      {
+        "q": "Las Mokrzański, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Las Mokrzański, Wrocław, gmina Miękinia, powiat średzki, województwo dolnośląskie, Polska",
+            "lat": "51.1689374",
+            "lon": "16.8552238",
+            "category": "boundary",
+            "type": "forest",
+            "osm_type": "relation",
+            "osm_id": 21158295,
+            "boundingbox": [
+              "51.1551258",
+              "51.1876966",
+              "16.8201202",
+              "16.8749093"
+            ]
+          },
+          {
+            "display_name": "Las Mokrzański, Ostrężynowa, Mokra, Leśnica, Wrocław, województwo dolnośląskie, 54-074, Polska",
+            "lat": "51.1761122",
+            "lon": "16.8335669",
+            "category": "highway",
+            "type": "bus_stop",
+            "osm_type": "node",
+            "osm_id": 1701714483,
+            "boundingbox": [
+              "51.1760622",
+              "51.1761622",
+              "16.8335169",
+              "16.8336169"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "nazwa": "Las Strachociński",
+    "zapytania": [
+      {
+        "q": "Las Strachociński, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Las Strachociński, Strachocin-Swojczyce-Wojnów, Wrocław, gmina Czernica, powiat wrocławski, województwo dolnośląskie, Polska",
+            "lat": "51.0901790",
+            "lon": "17.1533413",
+            "category": "natural",
+            "type": "wood",
+            "osm_type": "way",
+            "osm_id": 70179243,
+            "boundingbox": [
+              "51.0836486",
+              "51.0967323",
+              "17.1459045",
+              "17.1618380"
+            ]
+          },
+          {
+            "display_name": "Las Strachociński, Strachocin, Strachocin-Swojczyce-Wojnów, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.0955270",
+            "lon": "17.1438985",
+            "category": "landuse",
+            "type": "forest",
+            "osm_type": "way",
+            "osm_id": 682520832,
+            "boundingbox": [
+              "51.0901136",
+              "51.1010243",
+              "17.1385728",
+              "17.1484460"
+            ]
+          },
+          {
+            "display_name": "Las Strachociński, Grobla Janowicko-Swojczycka, Wojnów, Strachocin-Swojczyce-Wojnów, Wrocław, województwo dolnośląskie, 51-520, Polska",
+            "lat": "51.0959624",
+            "lon": "17.1497787",
+            "category": "information",
+            "type": "board",
+            "osm_type": "node",
+            "osm_id": 10292084010,
+            "boundingbox": [
+              "51.0959124",
+              "51.0960124",
+              "17.1497287",
+              "17.1498287"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "nazwa": "Las Zakrzowski i Park Pawłowicki",
+    "zapytania": [
+      {
+        "q": "Park Pawłowicki, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Park Pawłowicki, Pawłowice, Wrocław, województwo dolnośląskie, 51-230, Polska",
+            "lat": "51.1712926",
+            "lon": "17.1175157",
+            "category": "natural",
+            "type": "wood",
+            "osm_type": "relation",
+            "osm_id": 14339424,
+            "boundingbox": [
+              "51.1697377",
+              "51.1728454",
+              "17.1159668",
+              "17.1206139"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Las Zakrzowski, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Las Zakrzowski, Ramiszów Osiedle Przylesie, Psie Pole-Zawidawie, Ramiszów, gmina Długołęka, powiat wrocławski, województwo dolnośląskie, Polska",
+            "lat": "51.1731432",
+            "lon": "17.1249801",
+            "category": "landuse",
+            "type": "forest",
+            "osm_type": "relation",
+            "osm_id": 6119230,
+            "boundingbox": [
+              "51.1691488",
+              "51.1771537",
+              "17.1217141",
+              "17.1353719"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "nazwa": "Park Wschodni",
+    "zapytania": [
+      {
+        "q": "Park Wschodni, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Park Wschodni, Księże Małe, Księże, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.0859092",
+            "lon": "17.0845161",
+            "category": "leisure",
+            "type": "park",
+            "osm_type": "relation",
+            "osm_id": 1348101,
+            "boundingbox": [
+              "51.0827873",
+              "51.0890080",
+              "17.0729678",
+              "17.0929844"
+            ]
+          },
+          {
+            "display_name": "Park Wschodni, Krakowska, Księże Małe, Księże, Wrocław, województwo dolnośląskie, 50-428, Polska",
+            "lat": "51.0848773",
+            "lon": "17.0723339",
+            "category": "railway",
+            "type": "tram_stop",
+            "osm_type": "node",
+            "osm_id": 6092326594,
+            "boundingbox": [
+              "51.0848273",
+              "51.0849273",
+              "17.0722839",
+              "17.0723839"
+            ]
+          },
+          {
+            "display_name": "Park Wschodni, Krakowska, Księże Małe, Księże, Wrocław, województwo dolnośląskie, 50-428, Polska",
+            "lat": "51.0848910",
+            "lon": "17.0721987",
+            "category": "highway",
+            "type": "bus_stop",
+            "osm_type": "node",
+            "osm_id": 1702311565,
+            "boundingbox": [
+              "51.0848410",
+              "51.0849410",
+              "17.0721487",
+              "17.0722487"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "nazwa": "Park Brochowski",
+    "zapytania": [
+      {
+        "q": "Park Brochowski, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Park Brochowski, Brochów, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.0613770",
+            "lon": "17.0718369",
+            "category": "leisure",
+            "type": "park",
+            "osm_type": "way",
+            "osm_id": 100104325,
+            "boundingbox": [
+              "51.0588572",
+              "51.0640272",
+              "17.0700933",
+              "17.0734661"
+            ]
+          },
+          {
+            "display_name": "Park Brochowski, Centralna, Brochów, Wrocław, województwo dolnośląskie, 52-111, Polska",
+            "lat": "51.0639086",
+            "lon": "17.0723399",
+            "category": "highway",
+            "type": "bus_stop",
+            "osm_type": "node",
+            "osm_id": 1701717927,
+            "boundingbox": [
+              "51.0638586",
+              "51.0639586",
+              "17.0722899",
+              "17.0723899"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "nazwa": "Aquapark Zakrzów",
+    "zapytania": [
+      {
+        "q": "Wilanowska 29, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "29, Wilanowska, Osiedle Wilanowskie, Zakrzów, Psie Pole-Zawidawie, Wrocław, województwo dolnośląskie, 51-206, Polska",
+            "lat": "51.1565921",
+            "lon": "17.1354046",
+            "category": "place",
+            "type": "house",
+            "osm_type": "node",
+            "osm_id": 11784071890,
+            "boundingbox": [
+              "51.1565421",
+              "51.1566421",
+              "17.1353546",
+              "17.1354546"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Aquapark Zakrzów, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Basen Zakrzów, Kasztelańska, Osiedle Jana III Sobieskiego, Zakrzów, Psie Pole-Zawidawie, Wrocław, województwo dolnośląskie, 51-206, Polska",
+            "lat": "51.1567743",
+            "lon": "17.1354863",
+            "category": "leisure",
+            "type": "water_park",
+            "osm_type": "way",
+            "osm_id": 1089136280,
+            "boundingbox": [
+              "51.1563076",
+              "51.1573492",
+              "17.1342239",
+              "17.1364518"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "nazwa": "Kąpielisko Oporów",
+    "zapytania": [
+      {
+        "q": "Harcerska 25, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Harcerska, Oporów, Wrocław, województwo dolnośląskie, 52-404, Polska",
+            "lat": "51.0815559",
+            "lon": "16.9633446",
+            "category": "highway",
+            "type": "residential",
+            "osm_type": "way",
+            "osm_id": 17111752,
+            "boundingbox": [
+              "51.0792795",
+              "51.0838484",
+              "16.9618507",
+              "16.9648137"
+            ]
+          },
+          {
+            "display_name": "Harcerska, Oporów, Wrocław, województwo dolnośląskie, 52-403, Polska",
+            "lat": "51.0833086",
+            "lon": "16.9633763",
+            "category": "highway",
+            "type": "residential",
+            "osm_type": "way",
+            "osm_id": 17111754,
+            "boundingbox": [
+              "51.0830156",
+              "51.0835648",
+              "16.9624593",
+              "16.9642783"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Kąpielisko Oporów, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Kąpielisko Oporów, Oporów, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.0803613",
+            "lon": "16.9612470",
+            "category": "landuse",
+            "type": "recreation_ground",
+            "osm_type": "way",
+            "osm_id": 426613591,
+            "boundingbox": [
+              "51.0793031",
+              "51.0816021",
+              "16.9595493",
+              "16.9629548"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "nazwa": "Tor wrotkarski w Parku Tysiąclecia",
+    "zapytania": [
+      {
+        "q": "Sukielicka, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Sukielicka, Kuźniki, Wrocław, województwo dolnośląskie, 54-311, Polska",
+            "lat": "51.1195182",
+            "lon": "16.9429339",
+            "category": "highway",
+            "type": "residential",
+            "osm_type": "way",
+            "osm_id": 69223079,
+            "boundingbox": [
+              "51.1188411",
+              "51.1201955",
+              "16.9426549",
+              "16.9432122"
+            ]
+          },
+          {
+            "display_name": "Sukielicka, Nowy Dwór, Wrocław, województwo dolnośląskie, 54-311, Polska",
+            "lat": "51.1185175",
+            "lon": "16.9429795",
+            "category": "highway",
+            "type": "living_street",
+            "osm_type": "way",
+            "osm_id": 682060927,
+            "boundingbox": [
+              "51.1184600",
+              "51.1187028",
+              "16.9426030",
+              "16.9434116"
+            ]
+          }
+        ]
+      },
+      {
+        "q": "Park Tysiąclecia, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Park Tysiąclecia, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.1151270",
+            "lon": "16.9391562",
+            "category": "leisure",
+            "type": "park",
+            "osm_type": "way",
+            "osm_id": 854890878,
+            "boundingbox": [
+              "51.1080794",
+              "51.1222943",
+              "16.9325540",
+              "16.9504615"
+            ]
+          },
+          {
+            "display_name": "Park Tysiąclecia – Rolkowisko/Lodowisko, Rogowska, Nowy Dwór, Wrocław, województwo dolnośląskie, 54-311, Polska",
+            "lat": "51.1177218",
+            "lon": "16.9461252",
+            "category": "railway",
+            "type": "tram_stop",
+            "osm_type": "node",
+            "osm_id": 11160434930,
+            "boundingbox": [
+              "51.1176718",
+              "51.1177718",
+              "16.9460752",
+              "16.9461752"
+            ]
+          },
+          {
+            "display_name": "Park Tysiąclecia – Rolkowisko/Lodowisko, Rogowska, Nowy Dwór, Wrocław, województwo dolnośląskie, 54-313, Polska",
+            "lat": "51.1184376",
+            "lon": "16.9462944",
+            "category": "highway",
+            "type": "bus_stop",
+            "osm_type": "node",
+            "osm_id": 11160434928,
+            "boundingbox": [
+              "51.1183876",
+              "51.1184876",
+              "16.9462444",
+              "16.9463444"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "nazwa": "Pumptrack na Kuźnikach",
+    "zapytania": [
+      {
+        "q": "Hermanowska, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Hermanowska, Kuźniki, Wrocław, województwo dolnośląskie, 54-315, Polska",
+            "lat": "51.1226926",
+            "lon": "16.9544357",
+            "category": "highway",
+            "type": "tertiary",
+            "osm_type": "way",
+            "osm_id": 23700680,
+            "boundingbox": [
+              "51.1215406",
+              "51.1236815",
+              "16.9505501",
+              "16.9582798"
+            ]
+          },
+          {
+            "display_name": "Hermanowska, Kuźniki, Wrocław, województwo dolnośląskie, 54-313, Polska",
+            "lat": "51.1244899",
+            "lon": "16.9467256",
+            "category": "highway",
+            "type": "residential",
+            "osm_type": "way",
+            "osm_id": 31682892,
+            "boundingbox": [
+              "51.1238515",
+              "51.1251858",
+              "16.9438541",
+              "16.9496101"
+            ]
+          },
+          {
+            "display_name": "Hermanowska, Kuźniki, Wrocław, województwo dolnośląskie, 54-316, Polska",
+            "lat": "51.1237702",
+            "lon": "16.9500808",
+            "category": "highway",
+            "type": "tertiary",
+            "osm_type": "way",
+            "osm_id": 31552945,
+            "boundingbox": [
+              "51.1236815",
+              "51.1238515",
+              "16.9496101",
+              "16.9505501"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "nazwa": "Bulwary nad Odrą (Dunikowskiego i Kaczyńskich)",
+    "zapytania": [
+      {
+        "q": "Bulwar Xawerego Dunikowskiego, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "bulwar Xawerego Dunikowskiego, Ostrów Tumski, Stare Miasto, Wrocław, województwo dolnośląskie, 50-158, Polska",
+            "lat": "51.1128235",
+            "lon": "17.0418916",
+            "category": "highway",
+            "type": "path",
+            "osm_type": "way",
+            "osm_id": 119378253,
+            "boundingbox": [
+              "51.1120242",
+              "51.1132530",
+              "17.0397946",
+              "17.0438818"
+            ]
+          },
+          {
+            "display_name": "bulwar Xawerego Dunikowskiego, Ostrów Tumski, Stare Miasto, Wrocław, województwo dolnośląskie, 50-328, Polska",
+            "lat": "51.1119312",
+            "lon": "17.0452911",
+            "category": "highway",
+            "type": "path",
+            "osm_type": "way",
+            "osm_id": 119378257,
+            "boundingbox": [
+              "51.1116529",
+              "51.1120242",
+              "17.0438818",
+              "17.0466803"
+            ]
+          },
+          {
+            "display_name": "bulwar Xawerego Dunikowskiego, Ostrów Tumski, Stare Miasto, Wrocław, województwo dolnośląskie, 50-329, Polska",
+            "lat": "51.1113017",
+            "lon": "17.0476733",
+            "category": "highway",
+            "type": "path",
+            "osm_type": "way",
+            "osm_id": 274554255,
+            "boundingbox": [
+              "51.1111082",
+              "51.1115116",
+              "17.0470498",
+              "17.0482999"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
