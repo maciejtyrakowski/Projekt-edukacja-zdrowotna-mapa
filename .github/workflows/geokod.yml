@@ -1,0 +1,36 @@
+name: Geokodowanie miejsc
+
+# Uruchamia się po zmianie skryptu lub listy zapytań; można też włączyć ręcznie (Actions → Run workflow).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - tools/geokoduj_ci.py
+      - .github/workflows/geokod.yml
+      - data/geokod-trigger.txt
+
+permissions:
+  contents: write
+
+jobs:
+  geokod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Odpytaj OpenStreetMap (Nominatim, 1 zapytanie na sekundę)
+        run: python tools/geokoduj_ci.py
+      - name: Zapisz raport na gałęzi geokod-raport (main pozostaje bez zmian)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp data/geokod-raport.json /tmp/raport.json
+          git checkout --orphan geokod-raport
+          git rm -rf --cached . > /dev/null
+          cp /tmp/raport.json geokod-raport.json
+          git add geokod-raport.json
+          git commit -m "Raport geokodowania $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin geokod-raport
