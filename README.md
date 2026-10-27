@@ -1,5 +1,8 @@
 # Wrocław dla zdrowia — mapa miejsc prozdrowotnych
 
+**Strona:** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/
+**Plakat do druku (2 × A4 / A3):** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/print/druk.html
+
 Szkolny projekt z edukacji zdrowotnej. Składa się z dwóch części:
 
 1. **Strona internetowa** (`index.html`) z interaktywną mapą na telefon i komputer: filtry kategorii, przycisk „Pokaż wszystkie miejsca”, okienka z opisem i korzyścią zdrowotną, źródła i data weryfikacji.
