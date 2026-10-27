@@ -48,21 +48,29 @@ window.WDZ_DANE = {
       "id": 1,
       "nazwa": "Park Szczytnicki",
       "kategoria": "zielen",
-      "adres": "Śródmieście, na wschód od pl. Grunwaldzkiego (okolice Hali Stulecia)",
-      "opis": "Jeden z najstarszych i największych parków Wrocławia, założony w 1783 r. w stylu angielskim. Na jego terenie jest m.in. Ogród Japoński i drewniany kościółek z XVII w.",
+      "adres": "Między ul. Wróblewskiego, ul. Mickiewicza, ul. Paderewskiego i al. Różyckiego",
+      "opis": "Jeden z największych parków Wrocławia (ok. 83 ha), założony w 1783 r. w stylu angielskim. Są w nim m.in. Hala Stulecia, Pergola i Ogród Japoński.",
       "krotko": "Zabytkowy park z 1783 r. z Ogrodem Japońskim i długimi alejkami.",
       "korzysc": "Długie alejki sprzyjają spacerom, bieganiu i jeździe na rowerze, a kontakt z zielenią pomaga obniżyć stres.",
-      "uwagi": "Ogród Japoński w parku ma własne godziny otwarcia i zasady wstępu — sprawdź je przed wizytą.",
+      "uwagi": "Ogród Japoński jest czynny od kwietnia do października i ma własne zasady wstępu — sprawdź je przed wizytą.",
       "wspolrzedne": {
-        "lat": 51.1115,
-        "lon": 17.08,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.114975,
+        "lon": 17.082114,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), relation 12137435, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
+          "nazwa": "wroclaw.pl: Gdzie na spacer do parku we Wrocławiu (akt. 08.01.2026)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/gdzie-na-spacer-do-parku-we-wroclawiu"
+        },
+        {
           "nazwa": "Wikipedia (EN): Szczytnicki Park",
           "url": "https://en.wikipedia.org/wiki/Szczytnicki_Park"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/relation/12137435"
         }
       ],
       "geokod": [
@@ -74,20 +82,28 @@ window.WDZ_DANE = {
       "nazwa": "Park Południowy",
       "kategoria": "zielen",
       "adres": "Krzyki, między ul. Powstańców Śląskich a ul. Sudecką",
-      "opis": "Park o powierzchni ok. 25 ha ze stawem, tarasem widokowym, Altaną Bendera i pomnikiem Fryderyka Chopina. Są w nim też place zabaw i miejsce do gry w bule.",
-      "krotko": "Park (ok. 25 ha) ze stawem, altaną i placami zabaw.",
+      "opis": "Park o powierzchni ok. 23 ha ze stawem, tarasem widokowym, Altaną Bendera i pomnikiem Fryderyka Chopina. Są w nim też place zabaw i miejsce do gry w bule.",
+      "krotko": "Park (ok. 23 ha) ze stawem, altaną i placami zabaw.",
       "korzysc": "Alejki i polany zachęcają do spacerów i biegania, a place zabaw do ruchu na świeżym powietrzu całe rodziny.",
       "uwagi": null,
       "wspolrzedne": {
-        "lat": 51.0795,
-        "lon": 17.015,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.075907,
+        "lon": 17.011169,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 32230185, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
           "nazwa": "wroclaw.pl: Park Południowy",
           "url": "https://www.wroclaw.pl/zielony-wroclaw/park-poludniowy-wroclaw"
+        },
+        {
+          "nazwa": "wroclaw.pl: Gdzie na spacer do parku we Wrocławiu (akt. 08.01.2026)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/gdzie-na-spacer-do-parku-we-wroclawiu"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/32230185"
         }
       ],
       "geokod": [
@@ -99,20 +115,28 @@ window.WDZ_DANE = {
       "nazwa": "Park Grabiszyński",
       "kategoria": "zielen",
       "adres": "Grabiszyn, między ul. Grabiszyńską, al. Hallera a rzeką Ślęzą",
-      "opis": "Park o powierzchni blisko 48 ha, powstały na terenie dawnych cmentarzy. Ma aleje lipowe, polany, place zabaw i siłownie dla dorosłych.",
-      "krotko": "Park (blisko 48 ha) z polanami, placami zabaw i siłowniami plenerowymi.",
+      "opis": "Park o powierzchni ok. 38 ha, powstały na terenie dawnych cmentarzy. Ma aleje lipowe, polany, place zabaw i siłownie dla dorosłych.",
+      "krotko": "Park (ok. 38 ha) z polanami, placami zabaw i siłowniami plenerowymi.",
       "korzysc": "Duży, zielony teren do spacerów i ćwiczeń; siłownie plenerowe pozwalają trenować bez opłat za karnet.",
       "uwagi": null,
       "wspolrzedne": {
-        "lat": 51.093,
-        "lon": 16.986,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.086709,
+        "lon": 16.978084,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), relation 6629819, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
           "nazwa": "wroclaw.pl: Park Grabiszyński",
           "url": "https://www.wroclaw.pl/zielony-wroclaw/park-grabiszynski-wroclaw"
+        },
+        {
+          "nazwa": "wroclaw.pl: Gdzie na spacer do parku we Wrocławiu (akt. 08.01.2026)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/gdzie-na-spacer-do-parku-we-wroclawiu"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/relation/6629819"
         }
       ],
       "geokod": [
@@ -129,10 +153,10 @@ window.WDZ_DANE = {
       "korzysc": "Pływanie poprawia wydolność serca i płuc oraz angażuje wiele mięśni, nie obciążając przy tym stawów.",
       "uwagi": "Kąpielisko sezonowe i płatne. W sezonie 2026 bilet normalny kosztował 20 zł (pn–pt) i 25 zł (weekend). Ceny i terminy na kolejny sezon sprawdź na wroclaw.pl.",
       "wspolrzedne": {
-        "lat": 51.116,
-        "lon": 17.09,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.123253,
+        "lon": 17.082896,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 310593115, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
@@ -142,6 +166,10 @@ window.WDZ_DANE = {
         {
           "nazwa": "wroclaw.pl: Kąpieliska — ceny i godziny (28.06.2026)",
           "url": "https://www.wroclaw.pl/dla-mieszkanca/kapieliska-we-wroclawiu-morskie-oko-i-park-glinianki-atrakcje-ceny-godziny-otwarcia"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/310593115"
         }
       ],
       "geokod": [
@@ -159,10 +187,10 @@ window.WDZ_DANE = {
       "korzysc": "Basen sportowy umożliwia regularny trening pływacki przez cały rok, niezależnie od pogody.",
       "uwagi": "Obiekt płatny. Aktualne ceny i godziny sprawdź na stronie obiektu.",
       "wspolrzedne": {
-        "lat": 51.091,
-        "lon": 17.0322,
-        "status": "zrodlo",
-        "zrodlo": "Wikipedia (EN): Aquapark Wrocław"
+        "lat": 51.090586,
+        "lon": 17.032123,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 120932304, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
@@ -172,6 +200,10 @@ window.WDZ_DANE = {
         {
           "nazwa": "Wikipedia (EN): Aquapark Wrocław",
           "url": "https://en.wikipedia.org/wiki/Aquapark_Wroc%C5%82aw"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/120932304"
         }
       ],
       "geokod": [
@@ -188,10 +220,10 @@ window.WDZ_DANE = {
       "korzysc": "Pływanie i ruch na świeżym powietrzu wzmacniają kondycję i pomagają utrzymać prawidłową masę ciała.",
       "uwagi": "Kąpielisko sezonowe i płatne. W sezonie 2026 bilet normalny kosztował 21 zł (pn–pt) i 27 zł (weekend). Ceny na kolejny sezon sprawdź na wroclaw.pl.",
       "wspolrzedne": {
-        "lat": 51.13,
-        "lon": 16.965,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.141284,
+        "lon": 16.933388,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 291860305, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
@@ -201,6 +233,10 @@ window.WDZ_DANE = {
         {
           "nazwa": "wroclaw.pl: Kąpieliska — ceny i godziny (28.06.2026)",
           "url": "https://www.wroclaw.pl/dla-mieszkanca/kapieliska-we-wroclawiu-morskie-oko-i-park-glinianki-atrakcje-ceny-godziny-otwarcia"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/291860305"
         }
       ],
       "geokod": [
@@ -218,15 +254,19 @@ window.WDZ_DANE = {
       "korzysc": "Pływanie to ruch o niskim obciążeniu stawów, dobry dla osób w każdym wieku.",
       "uwagi": "Godziny i ceny sprawdź na stronie obiektu.",
       "wspolrzedne": {
-        "lat": 51.1215,
-        "lon": 16.9935,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.132109,
+        "lon": 16.987502,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), node 1200491404, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
           "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
           "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/node/1200491404"
         }
       ],
       "geokod": [
@@ -243,10 +283,10 @@ window.WDZ_DANE = {
       "korzysc": "Miejsce zawodów i treningów sportowych, które promuje aktywność fizyczną.",
       "uwagi": "Nie potwierdzono, czy stadion jest ogólnodostępny do rekreacji. To przede wszystkim obiekt dla klubów i imprez.",
       "wspolrzedne": {
-        "lat": 51.11944,
-        "lon": 17.09667,
-        "status": "zrodlo",
-        "zrodlo": "Wikipedia (EN): Olympic Stadium (Wrocław)"
+        "lat": 51.119592,
+        "lon": 17.09666,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 224222485, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
@@ -256,6 +296,10 @@ window.WDZ_DANE = {
         {
           "nazwa": "Wikipedia (EN): Olympic Stadium (Wrocław)",
           "url": "https://en.wikipedia.org/wiki/Olympic_Stadium_(Wroc%C5%82aw)"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/224222485"
         }
       ],
       "geokod": [
@@ -272,10 +316,10 @@ window.WDZ_DANE = {
       "korzysc": "Trening siłowy na świeżym powietrzu wzmacnia mięśnie i kości. Siłownia jest bezpłatna, więc korzystać może każdy.",
       "uwagi": "Według wroclaw.pl siłownia jest ogólnodostępna i bezpłatna. Znacznik wskazuje stadion; dokładne miejsce siłowni do sprawdzenia na miejscu.",
       "wspolrzedne": {
-        "lat": 51.14111,
-        "lon": 16.94389,
-        "status": "zrodlo",
-        "zrodlo": "Wikipedia (EN): Wrocław Stadium (współrzędne stadionu)"
+        "lat": 51.141186,
+        "lon": 16.943806,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 122274942, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
@@ -285,6 +329,10 @@ window.WDZ_DANE = {
         {
           "nazwa": "Wikipedia (EN): Wrocław Stadium",
           "url": "https://en.wikipedia.org/wiki/Wroc%C5%82aw_Stadium"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/122274942"
         }
       ],
       "geokod": [
@@ -301,15 +349,19 @@ window.WDZ_DANE = {
       "korzysc": "Obiekt do treningów i zawodów sportowych.",
       "uwagi": "Nie potwierdzono, czy obiekt jest dostępny dla mieszkańców poza zajęciami klubowymi.",
       "wspolrzedne": {
-        "lat": 51.087,
-        "lon": 17.006,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.086379,
+        "lon": 17.021078,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), node 1200341587, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
           "nazwa": "wroclaw.pl: Stadiony sportowe we Wrocławiu",
           "url": "https://www.wroclaw.pl/sport/stadiony-sportowe-we-wroclawiu"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/node/1200341587"
         }
       ],
       "geokod": [
@@ -326,15 +378,19 @@ window.WDZ_DANE = {
       "korzysc": "Pływanie i relaks w wodzie pomagają się zregenerować i obniżyć napięcie mięśni.",
       "uwagi": "Godziny i ceny sprawdź na stronie obiektu.",
       "wspolrzedne": {
-        "lat": 51.1053,
-        "lon": 17.0365,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.105431,
+        "lon": 17.034601,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), node 1200502308, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
           "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
           "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/node/1200502308"
         }
       ],
       "geokod": [
@@ -345,26 +401,324 @@ window.WDZ_DANE = {
       "id": 12,
       "nazwa": "Mała Sobótka (Górka Skarbowców)",
       "kategoria": "inne",
-      "adres": "Park Grabiszyński (część przy rzece Ślęzie)",
+      "adres": "Park Górka Skarbowców (Grabiszynek), obok Parku Grabiszyńskiego",
       "opis": "Sztucznie usypane wzniesienie z końca XIX w. o wysokości 136 m n.p.m. Dziś korzystają z niego głównie rowerzyści, a zimą saneczkarze.",
       "krotko": "Wzniesienie (136 m n.p.m.) dla rowerzystów, zimą dla saneczkarzy.",
       "korzysc": "Podbiegi i podjazdy rowerowe to dobry trening wytrzymałości, a zimą sanki to ruch dla całej rodziny.",
       "uwagi": null,
       "wspolrzedne": {
-        "lat": 51.0895,
-        "lon": 16.98,
-        "status": "przyblizone",
-        "zrodlo": null
+        "lat": 51.081711,
+        "lon": 16.996988,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), node 374456809, sprawdzono 2026-10-27"
       },
       "zrodla": [
         {
           "nazwa": "wroclaw.pl: Park Grabiszyński",
           "url": "https://www.wroclaw.pl/zielony-wroclaw/park-grabiszynski-wroclaw"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/node/374456809"
         }
       ],
       "geokod": [
         "Mała Sobótka, Wrocław",
         "Górka Skarbowców, Wrocław"
+      ]
+    },
+    {
+      "id": 13,
+      "nazwa": "Las Mokrzański",
+      "kategoria": "zielen",
+      "adres": "Zachód miasta: osiedla Leśnica, Marszowice i Mokra",
+      "opis": "Największy las we Wrocławiu (680 ha) z siecią ścieżek i Wiśniową Górą (141 m n.p.m.). Przy ul. Mojęcickiej jest Mokrzański Plac Zabaw.",
+      "krotko": "Największy las w mieście (680 ha) z siecią leśnych ścieżek.",
+      "korzysc": "Marsz po leśnych ścieżkach z podejściami wzmacnia serce i nogi, a powietrze w lesie jest czystsze niż przy ulicach.",
+      "uwagi": "Znacznik stoi przy przystanku „Las Mokrzański” (ul. Ostrężynowa, Mokra), czyli przy wejściu do lasu.",
+      "wspolrzedne": {
+        "lat": 51.176112,
+        "lon": 16.833566,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), node 1701714483, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Gdzie na spacer do lasu (23.03.2025)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/gdzie-na-spacer-do-lasu-we-wroclawiu-atrakcje-jak-dojechac"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/node/1701714483"
+        }
+      ],
+      "geokod": [
+        "Las Mokrzański, Wrocław"
+      ]
+    },
+    {
+      "id": 14,
+      "nazwa": "Las Strachociński",
+      "kategoria": "zielen",
+      "adres": "Południowy wschód miasta: osiedla Strachocin i Wojnów",
+      "opis": "Las o powierzchni 140 ha z leśnymi ścieżkami, groblami i wałami wzdłuż Odry. W pobliżu jest Park Strachociński z placem zabaw.",
+      "krotko": "Las (140 ha) ze ścieżkami, groblami i wałami nad Odrą.",
+      "korzysc": "Wały i groble to płaskie, długie trasy dobre do spokojnego biegania i jazdy na rowerze.",
+      "uwagi": null,
+      "wspolrzedne": {
+        "lat": 51.095527,
+        "lon": 17.143898,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 682520832, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Gdzie na spacer do lasu (23.03.2025)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/gdzie-na-spacer-do-lasu-we-wroclawiu-atrakcje-jak-dojechac"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/682520832"
+        }
+      ],
+      "geokod": [
+        "Las Strachociński, Wrocław"
+      ]
+    },
+    {
+      "id": 15,
+      "nazwa": "Las Zakrzowski i Park Pawłowicki",
+      "kategoria": "zielen",
+      "adres": "Północny wschód miasta: osiedla Zakrzów i Pawłowice",
+      "opis": "Las o powierzchni 86 ha; jego część to Park Pawłowicki z renesansowym pałacem, stawem i ścieżkami wokół niego.",
+      "krotko": "Las (86 ha) z Parkiem Pawłowickim, stawem i ścieżkami.",
+      "korzysc": "Spacer wokół stawu i po lesie to łagodny ruch dostępny dla każdego, także dla osób starszych.",
+      "uwagi": null,
+      "wspolrzedne": {
+        "lat": 51.171292,
+        "lon": 17.117515,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), relation 14339424, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Gdzie na spacer do lasu (23.03.2025)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/gdzie-na-spacer-do-lasu-we-wroclawiu-atrakcje-jak-dojechac"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/relation/14339424"
+        }
+      ],
+      "geokod": [
+        "Park Pawłowicki, Wrocław",
+        "Las Zakrzowski, Wrocław"
+      ]
+    },
+    {
+      "id": 16,
+      "nazwa": "Park Wschodni",
+      "kategoria": "zielen",
+      "adres": "Główne wejście od ul. Krakowskiej",
+      "opis": "Park o powierzchni ok. 30 ha, założony w latach 1927–1929 jako park sportowy dla wszystkich mieszkańców. Ma ścieżki biegowe, trasę do biegu na orientację i plac zabaw.",
+      "krotko": "Park (ok. 30 ha) ze ścieżkami biegowymi i trasą do biegu na orientację.",
+      "korzysc": "Bieg na orientację łączy wysiłek z myśleniem: trenuje kondycję i koncentrację jednocześnie.",
+      "uwagi": null,
+      "wspolrzedne": {
+        "lat": 51.085909,
+        "lon": 17.084516,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), relation 1348101, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Park Wschodni",
+          "url": "https://www.wroclaw.pl/zielony-wroclaw/park-wschodni-wroclaw"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/relation/1348101"
+        }
+      ],
+      "geokod": [
+        "Park Wschodni, Wrocław"
+      ]
+    },
+    {
+      "id": 17,
+      "nazwa": "Park Brochowski",
+      "kategoria": "zielen",
+      "adres": "Południowy wschód miasta, między Brochowem a Jagodnem",
+      "opis": "Park o powierzchni ok. 8 ha z labiryntem grabowym, dużym placem zabaw i siłownią plenerową dla dorosłych.",
+      "krotko": "Park z labiryntem grabowym, placem zabaw i siłownią plenerową.",
+      "korzysc": "Siłownia plenerowa i plac zabaw w jednym miejscu pozwalają ćwiczyć razem całej rodzinie.",
+      "uwagi": "Wstęp do parku jest bezpłatny, a labirynt można zwiedzać przez cały rok (według wroclaw.pl).",
+      "wspolrzedne": {
+        "lat": 51.061377,
+        "lon": 17.071836,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 100104325, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Gdzie na spacer do parku we Wrocławiu (akt. 08.01.2026)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/gdzie-na-spacer-do-parku-we-wroclawiu"
+        },
+        {
+          "nazwa": "wroclaw.pl: Labirynt grabowy w Parku Brochowskim (27.10.2024)",
+          "url": "https://www.wroclaw.pl/zielony-wroclaw/labirynt-grabowy-wroclaw-park-brochowski-zwiedzanie"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/100104325"
+        }
+      ],
+      "geokod": [
+        "Park Brochowski, Wrocław"
+      ]
+    },
+    {
+      "id": 18,
+      "nazwa": "Aquapark Zakrzów",
+      "kategoria": "woda",
+      "adres": "ul. Wilanowska 29",
+      "opis": "Aquapark z basenem rekreacyjnym, dziecięcym i zewnętrznym, wymieniony na miejskiej liście basenów.",
+      "krotko": "Basen rekreacyjny, dziecięcy i zewnętrzny.",
+      "korzysc": "Zabawa w wodzie to ruch, który nie męczy jak trening, a angażuje całe ciało.",
+      "uwagi": "Godziny i ceny sprawdź na stronie obiektu.",
+      "wspolrzedne": {
+        "lat": 51.156774,
+        "lon": 17.135486,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 1089136280, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/1089136280"
+        }
+      ],
+      "geokod": [
+        "Wilanowska 29, Wrocław",
+        "Aquapark Zakrzów, Wrocław"
+      ]
+    },
+    {
+      "id": 19,
+      "nazwa": "Kąpielisko Oporów",
+      "kategoria": "woda",
+      "adres": "ul. Harcerska 25",
+      "opis": "Kąpielisko wymienione na miejskiej liście basenów i kąpielisk.",
+      "krotko": "Kąpielisko z miejskiej listy kąpielisk.",
+      "korzysc": "Pływanie na świeżym powietrzu poprawia wydolność i hartuje organizm.",
+      "uwagi": "Terminy sezonu, godziny i ceny sprawdź na wroclaw.pl.",
+      "wspolrzedne": {
+        "lat": 51.080361,
+        "lon": 16.961247,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 426613591, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Baseny i kąpieliska we Wrocławiu",
+          "url": "https://www.wroclaw.pl/sport/baseny-i-kapieliska-we-wroclawiu"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/426613591"
+        }
+      ],
+      "geokod": [
+        "Harcerska 25, Wrocław",
+        "Kąpielisko Oporów, Wrocław"
+      ]
+    },
+    {
+      "id": 20,
+      "nazwa": "Tor wrotkarski w Parku Tysiąclecia",
+      "kategoria": "sport",
+      "adres": "ul. Sukielicka (Park Tysiąclecia)",
+      "opis": "Tor wrotkarski zbudowany na The World Games 2017, z torem szybkim (200 m) i torem ulicznym (600 m).",
+      "krotko": "Tor szybki 200 m i tor uliczny 600 m dla rolkarzy.",
+      "korzysc": "Jazda na rolkach wzmacnia mięśnie nóg i poprawia równowagę, a mniej obciąża stawy niż bieganie.",
+      "uwagi": "Źródło nie podaje zasad korzystania ani godzin — sprawdź je przed wizytą. Znacznik wskazuje Park Tysiąclecia; tor leży w parku, przy ul. Sukielickiej.",
+      "wspolrzedne": {
+        "lat": 51.115127,
+        "lon": 16.939156,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 854890878, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Tor wrotkarski",
+          "url": "https://www.wroclaw.pl/sport/tor-wrotkarski"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/854890878"
+        }
+      ],
+      "geokod": [
+        "Sukielicka, Wrocław",
+        "Park Tysiąclecia, Wrocław"
+      ]
+    },
+    {
+      "id": 21,
+      "nazwa": "Pumptrack na Kuźnikach",
+      "kategoria": "sport",
+      "adres": "ul. Hermanowska",
+      "opis": "Tor do jazdy na rowerze, deskorolce i rolkach, zbudowany z Wrocławskiego Budżetu Obywatelskiego.",
+      "krotko": "Tor dla rowerzystów, deskorolkarzy i rolkarzy.",
+      "korzysc": "Jazda po falach toru to intensywny trening całego ciała, który poprawia koordynację.",
+      "uwagi": "Informacja z artykułu z 2020 r. (materiał archiwalny) — stan obiektu warto sprawdzić na miejscu. Znacznik stoi na ul. Hermanowskiej; dokładne miejsce toru na tej ulicy nie jest potwierdzone.",
+      "wspolrzedne": {
+        "lat": 51.12377,
+        "lon": 16.95008,
+        "status": "przyblizone",
+        "zrodlo": "OpenStreetMap: ulica (way 31552945), sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Pumptrack na Kuźnikach (23.06.2020)",
+          "url": "https://www.wroclaw.pl/dla-mieszkanca/pumptrack-na-kuznikach"
+        }
+      ],
+      "geokod": [
+        "Hermanowska, Wrocław"
+      ]
+    },
+    {
+      "id": 22,
+      "nazwa": "Bulwary nad Odrą (Dunikowskiego i Kaczyńskich)",
+      "kategoria": "inne",
+      "adres": "Brzeg Odry między Mostem Piaskowym a Mostem Grunwaldzkim",
+      "opis": "Prawie kilometrowy odcinek nadrzecznych bulwarów z trasą pieszo-rowerową, która przechodzi pod Mostem Pokoju.",
+      "krotko": "Ok. 1 km trasy pieszo-rowerowej wzdłuż Odry w centrum.",
+      "korzysc": "Spacer wzdłuż rzeki w centrum miasta to łatwy sposób na codzienną porcję ruchu.",
+      "uwagi": "Opis według artykułu z 2016 r. (materiał archiwalny).",
+      "wspolrzedne": {
+        "lat": 51.112823,
+        "lon": 17.041891,
+        "status": "zweryfikowane",
+        "zrodlo": "OpenStreetMap (Nominatim), way 119378253, sprawdzono 2026-10-27"
+      },
+      "zrodla": [
+        {
+          "nazwa": "wroclaw.pl: Bulwary nad Odrą (25.03.2016)",
+          "url": "https://www.wroclaw.pl/bulwary-nad-odra-wroclaw-dunikowskiego-kaczynskich"
+        },
+        {
+          "nazwa": "OpenStreetMap: położenie obiektu",
+          "url": "https://www.openstreetmap.org/way/119378253"
+        }
+      ],
+      "geokod": [
+        "Bulwar Xawerego Dunikowskiego, Wrocław"
       ]
     }
   ]

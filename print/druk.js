@@ -16,16 +16,16 @@
   var UKLADY = {
     a4x2: {
       strona: 'A4 landscape',
-      // mapa: lewa kartka 277 mm, prawa 132 mm (w tym 12 mm zakładki), wysokość 171 mm
+      // mapa: lewa kartka 277 mm, prawa 100 mm (w tym 12 mm zakładki), wysokość 171 mm
       mapaL: { x: 10, y: 29, w: 277, h: 171 },
-      mapaP: { x: 10, y: 29, w: 132, h: 171 },
+      mapaP: { x: 10, y: 29, w: 100, h: 171 },
       zakladka: 12,
-      panel: { x: 148, y: 29, w: 139, h: 171 }
+      panel: { x: 116, y: 29, w: 171, h: 171 }
     },
     a3: {
       strona: 'A3 landscape',
-      mapa: { x: 10, y: 29, w: 270, h: 258 },
-      panel: { x: 287, y: 29, w: 123, h: 258 }
+      mapa: { x: 10, y: 29, w: 236, h: 258 },
+      panel: { x: 252, y: 29, w: 158, h: 258 }
     }
   };
 
@@ -119,6 +119,7 @@
     lis.appendChild(ol);
     p.appendChild(lis);
 
+    var dol = el('div', 'dol');
     var q = el('section', 'qr-blok');
     var spr = sprawdzUrl(stan.url);
     if (spr.ok) {
@@ -129,7 +130,7 @@
       q.appendChild(el('div', 'qr qr--brak', 'BRAK KODU QR<br>— wpisz adres strony w panelu nad arkuszem'));
       q.appendChild(el('div', 'qr-podpis', '<strong>Zeskanuj i zobacz dokładną mapę na telefonie</strong>'));
     }
-    p.appendChild(q);
+    dol.appendChild(q);
 
     var zr = el('section', 'zrodla-druk');
     var autor = stan.autor ? esc(stan.autor) : '______________________________';
@@ -137,14 +138,15 @@
       'Dane o miejscach: wroclaw.pl, Wikipedia (źródła każdego miejsca są podane na stronie internetowej). ' +
       'Stan danych: ' + esc(W.formatujDate(DANE.meta.data_weryfikacji)) + '. Godziny i ceny sprawdzaj na stronach obiektów.</p>';
     if (przyblizone > 0) {
-      html += '<p>* Położenie ' + przyblizone + ' miejsc jest przybliżone i wymaga weryfikacji.</p>';
+      html += '<p>* Położenie ' + przyblizone + (przyblizone === 1 ? ' miejsca' : ' miejsc') + ' jest przybliżone i wymaga weryfikacji.</p>';
       html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI).</p>';
     } else {
       html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI). Dane lokalizacyjne zweryfikowano w podanych źródłach.</p>';
     }
     html += '<p><strong>Autor projektu:</strong> ' + autor + '</p>';
     zr.innerHTML = html;
-    p.appendChild(zr);
+    dol.appendChild(zr);
+    p.appendChild(dol);
     return p;
   }
 

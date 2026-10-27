@@ -99,7 +99,7 @@ body { margin: 0; background: #e7ebe5; }
 .legenda-druk .znak-kat {
   flex: 0 0 6mm; height: 6mm; border-radius: 50%; display: grid; place-items: center;
 }
-.lista-druk { columns: 2; column-gap: 5mm; margin: 0; padding: 0; list-style: none; }
+.lista-druk { columns: 3; column-gap: 4mm; margin: 0; padding: 0; list-style: none; }
 .lista-druk li { break-inside: avoid; display: flex; gap: 1.8mm; margin-bottom: 1.4mm; }
 .lista-druk .nr {
   flex: 0 0 4.6mm; height: 4.6mm; border-radius: 50%; color: #fff; font-weight: 700;
@@ -118,7 +118,9 @@ body { margin: 0; background: #e7ebe5; }
 .qr-podpis strong { display: block; font-size: 10pt; color: var(--zielony-ciemny); line-height: 1.2; margin-bottom: 1.5mm; }
 .qr-podpis .url { font-size: 7pt; color: var(--tekst-2); word-break: break-all; }
 
-.zrodla-druk { font-size: 6.6pt; color: var(--tekst-2); border-top: .3mm solid var(--linia); padding-top: 2mm; margin-top: auto; }
+/* Dół panelu: kod QR obok źródeł */
+.dol { margin-top: auto; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 4mm; align-items: end; }
+.zrodla-druk { font-size: 6.4pt; color: var(--tekst-2); border-top: .3mm solid var(--linia); padding-top: 2mm; min-width: 0; }
 .zrodla-druk p { margin: 0 0 1mm; }
 
 /* ---------- Druk ---------- */
@@ -130,7 +132,9 @@ body { margin: 0; background: #e7ebe5; }
 }
 
 /* A3: więcej miejsca w panelu — większe litery i kod QR */
-.arkusz--a3 .panel { font-size: 9pt; gap: 5mm; }
+.arkusz--a3 .panel { font-size: 8pt; gap: 3mm; }
+.arkusz--a3 .lista-druk { columns: 3; column-gap: 4mm; }
+.arkusz--a3 .dol { grid-template-columns: 1fr; }
 .arkusz--a3 .panel h2 { font-size: 11pt; }
 .arkusz--a3 .legenda-druk li { font-size: 9pt; }
 .arkusz--a3 .lista-druk li { margin-bottom: 2.2mm; }
