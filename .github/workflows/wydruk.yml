@@ -1,15 +1,8 @@
 name: Pliki do druku
 
+# Uruchamiane ręcznie: Actions → Pliki do druku → Run workflow.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - print/**
-      - data/places.js
-      - lib/**
-      - tools/drukuj_ci.js
-      - .github/workflows/wydruk.yml
 
 permissions:
   contents: write
@@ -36,6 +29,7 @@ jobs:
           node tools/drukuj_ci.js >> diag.txt 2>&1 || echo "skrypt zakonczony bledem" >> diag.txt
           mkdir -p wydruk && cp diag.txt wydruk/diag.txt
       - name: Zapisz PDF na gałęzi wydruk (main bez zmian)
+        if: hashFiles('wydruk/plakat-2xA4.pdf') != '' && hashFiles('wydruk/plakat-A3.pdf') != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -46,4 +40,4 @@ jobs:
           cp /tmp/wydruk/* .
           git add -A
           git commit -m "Pliki do druku $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push -f origin wydruk-test
+          git push -f origin wydruk
