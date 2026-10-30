@@ -27,7 +27,7 @@ window.WDZ_DANE = {
         "ikona": "serce"
       }
     },
-    "autor": "UZUPEŁNIJ: imię i nazwisko, klasa",
+    "autor": "Adam Pastuszka, Tymoteusz Korszeń, Kacper Sławiński, Jakub Rzeźnik, Maciej Tyrakowski",
     "zrodla_ogolne": [
       {
         "nazwa": "Podkład mapy: © OpenStreetMap contributors (licencja ODbL)",

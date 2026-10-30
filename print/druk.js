@@ -149,7 +149,10 @@
     } else {
       html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI). Dane lokalizacyjne zweryfikowano w podanych źródłach.</p>';
     }
-    html += '<p><strong>Autor projektu:</strong> ' + autor + '</p>';
+    var autorzyHtml = stan.autor
+      ? stan.autor.split(',').map(function (x) { return '<span class="nazwisko">' + esc(x.trim()) + '</span>'; }).join(', ')
+      : autor;
+    html += '<p class="autorzy"><strong>Autorzy projektu:</strong> ' + autorzyHtml + '</p>';
     zr.innerHTML = html;
     dol.appendChild(zr);
     p.appendChild(dol);

@@ -826,6 +826,13 @@ body { margin: 0; background: #e7ebe5; }
 /* Tytuł zawsze w jednej linii */
 .tytul h1 { white-space: nowrap; }
 .tytul p.who--a3 { max-width: 165mm; font-size: 9.5pt; }
+/* A3: bez podtytułu — tytuł i zalecenie WHO mieszczą się w jednym rzędzie */
+.arkusz--a3 .tytul > p:not(.who) { display: none; }
+
+/* Autorzy: większa czcionka, imię i nazwisko nierozdzielone */
+.zrodla-druk p.autorzy { font-size: 7.6pt; color: var(--tekst); margin-top: 1.5mm; line-height: 1.35; }
+.zrodla-druk .nazwisko { white-space: nowrap; }
+.arkusz--a3 .zrodla-druk p.autorzy { font-size: 9pt; }
 
 </style>
   <style id="styl-strony">@page { size: A4 landscape; margin: 0; }</style>
@@ -841,7 +848,7 @@ body { margin: 0; background: #e7ebe5; }
         <span class="komunikat" id="komunikat-url" role="status"></span>
       </li>
       <li>
-        <label for="pole-autor">Autor projektu</label>
+        <label for="pole-autor">Autorzy projektu</label>
         <input id="pole-autor" type="text" placeholder="Imię i nazwisko, klasa">
       </li>
       <li>
@@ -3290,7 +3297,7 @@ window.WDZ_DANE = {
         "ikona": "serce"
       }
     },
-    "autor": "UZUPEŁNIJ: imię i nazwisko, klasa",
+    "autor": "Adam Pastuszka, Tymoteusz Korszeń, Kacper Sławiński, Jakub Rzeźnik, Maciej Tyrakowski",
     "zrodla_ogolne": [
       {
         "nazwa": "Podkład mapy: © OpenStreetMap contributors (licencja ODbL)",
@@ -4087,7 +4094,10 @@ window.WDZ_DANE = {
     } else {
       html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI). Dane lokalizacyjne zweryfikowano w podanych źródłach.</p>';
     }
-    html += '<p><strong>Autor projektu:</strong> ' + autor + '</p>';
+    var autorzyHtml = stan.autor
+      ? stan.autor.split(',').map(function (x) { return '<span class="nazwisko">' + esc(x.trim()) + '</span>'; }).join(', ')
+      : autor;
+    html += '<p class="autorzy"><strong>Autorzy projektu:</strong> ' + autorzyHtml + '</p>';
     zr.innerHTML = html;
     dol.appendChild(zr);
     p.appendChild(dol);
@@ -4107,7 +4117,6 @@ window.WDZ_DANE = {
     } else {
       t.innerHTML = '<p class="who">' + WHO_TEKST + '</p>';
     }
-    if (czesc) t.innerHTML += '<p class="tytul__czesc">' + czesc + '</p>';
     return t;
   }
 

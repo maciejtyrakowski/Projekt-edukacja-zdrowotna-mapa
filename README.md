@@ -1,5 +1,7 @@
 # Zdrowe miejsca we Wrocławiu — mapa
 
+**Autorzy:** Adam Pastuszka, Tymoteusz Korszeń, Kacper Sławiński, Jakub Rzeźnik, Maciej Tyrakowski
+
 **Strona:** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/
 **Plakat do druku (2 × A4 / A3):** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/print/druk.html
 
@@ -37,7 +39,6 @@ Biblioteki są zapisane w projekcie, a nie pobierane z CDN. Uwaga: po otwarciu p
 
 | # | Zadanie | Dlaczego |
 |---|---------|----------|
-| 1 | Uzupełnij pole `"autor"` w `data/places.json` i uruchom `python tools/zbuduj_dane.py`. | Teraz jest tam `UZUPEŁNIJ: imię i nazwisko, klasa`. |
 | 2 | Kliknij na mapie każde miejsce i sprawdź, czy znacznik stoi we właściwym punkcie. | Współrzędne wszystkich 22 miejsc pochodzą z OpenStreetMap (link przy każdym miejscu), ale warto obejrzeć je samemu. |
 | 3 | Opublikuj stronę na GitHub Pages. | Kod QR musi prowadzić do publicznego adresu. |
 | 4 | Wygeneruj QR, wydrukuj, zeskanuj telefonem. | Dopiero wtedy wiadomo, że QR działa. |

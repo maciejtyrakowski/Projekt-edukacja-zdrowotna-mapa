@@ -157,3 +157,8 @@ body { margin: 0; background: #e7ebe5; }
 .tytul p.who--a3 { max-width: 165mm; font-size: 9.5pt; }
 /* A3: bez podtytułu — tytuł i zalecenie WHO mieszczą się w jednym rzędzie */
 .arkusz--a3 .tytul > p:not(.who) { display: none; }
+
+/* Autorzy: większa czcionka, imię i nazwisko nierozdzielone */
+.zrodla-druk p.autorzy { font-size: 7.6pt; color: var(--tekst); margin-top: 1.5mm; line-height: 1.35; }
+.zrodla-druk .nazwisko { white-space: nowrap; }
+.arkusz--a3 .zrodla-druk p.autorzy { font-size: 9pt; }
