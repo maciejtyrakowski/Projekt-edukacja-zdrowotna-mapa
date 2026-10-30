@@ -1,0 +1,47 @@
+name: Pliki do druku
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - print/**
+      - data/places.js
+      - lib/**
+      - tools/drukuj_ci.js
+      - .github/workflows/wydruk.yml
+
+permissions:
+  contents: write
+
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Playwright
+        run: |
+          npm init -y > /dev/null
+          npm install playwright@1.47.2
+          npx playwright install --with-deps chromium
+      - name: Wygeneruj PDF
+        run: |
+          python3 -m http.server 8000 > /dev/null 2>&1 &
+          sleep 2
+          node tools/drukuj_ci.js
+          cat wydruk/log.txt
+      - name: Zapisz PDF na gałęzi wydruk (main bez zmian)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp -r wydruk /tmp/wydruk
+          git checkout --orphan wydruk
+          git rm -rf --cached . > /dev/null
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp /tmp/wydruk/* .
+          git add -A
+          git commit -m "Pliki do druku $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin wydruk

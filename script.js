@@ -194,6 +194,10 @@
     ai.textContent = 'Przy przygotowaniu projektu pomagała sztuczna inteligencja (AI). Weryfikacja położenia części znaczników nie została jeszcze zakończona.';
   }
   document.getElementById('autor').textContent = DANE.meta.autor || '—';
+  if (DANE.meta.who) {
+    document.getElementById('who').innerHTML = esc(DANE.meta.who.tekst) +
+      ' <a href="' + esc(DANE.meta.who.url) + '" target="_blank" rel="noopener">Źródło: WHO</a>';
+  }
 
   // ---------- Tryb sprawdzania współrzędnych (?edycja=1) ----------
   if (trybEdycji) {

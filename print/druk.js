@@ -7,7 +7,9 @@
   var esc = W.escapeHtml;
   var KAT = DANE.meta.kategorie;
   var MIEJSCA = DANE.miejsca;
-  var PX_NA_MM = 96 / 25.4;      // przeglądarka drukuje 96 px CSS na cal
+  var PX_NA_MM = 96 / 25.4;
+  // Podkład: 'osm' (domyślnie, jak na stronie) albo 'sip' (mapa miasta; parametr ?podklad=sip).
+  var PODKLAD = /[?&]podklad=sip\b/.test(location.search) ? 'sip' : 'osm';      // przeglądarka drukuje 96 px CSS na cal
 
   // Szerokości i wysokości map liczymy w całych, parzystych pikselach,
   // żeby obie połówki mapy zszyły się co do piksela.
@@ -134,8 +136,12 @@
 
     var zr = el('section', 'zrodla-druk');
     var autor = stan.autor ? esc(stan.autor) : '______________________________';
-    var html = '<p><strong>Źródła:</strong> podkład mapy © OpenStreetMap contributors, licencja ODbL — openstreetmap.org/copyright. ' +
-      'Dane o miejscach: wroclaw.pl, Wikipedia; położenie miejsc: OpenStreetMap (źródła każdego miejsca są podane na stronie internetowej). ' +
+    var podklad = PODKLAD === 'sip'
+      ? 'podkład mapy: mapa podstawowa Wrocławia, System Informacji Przestrzennej Wrocławia (geoportal.wroclaw.pl). '
+      : 'podkład mapy © OpenStreetMap contributors, licencja ODbL — openstreetmap.org/copyright. ';
+    var html = '<p><strong>Źródła:</strong> ' + podklad +
+      'Dane o miejscach: wroclaw.pl, Wikipedia; położenie miejsc: © OpenStreetMap contributors (ODbL). ' +
+      'Zalecenia ruchu: WHO (who.int). Źródło każdego miejsca jest podane na stronie internetowej. ' +
       'Stan danych: ' + esc(W.formatujDate(DANE.meta.data_weryfikacji)) + '. Godziny i ceny sprawdzaj na stronach obiektów.</p>';
     if (przyblizone > 0) {
       html += '<p>* Położenie ' + przyblizone + (przyblizone === 1 ? ' miejsca' : ' miejsc') + ' jest przybliżone i wymaga weryfikacji.</p>';
@@ -150,14 +156,18 @@
     return p;
   }
 
+  var WHO_TEKST = 'Ile ruchu? WHO zaleca: młodzież (5–17 lat) — <strong>co najmniej 60 minut dziennie</strong>, ' +
+    'dorośli — <strong>co najmniej 150 minut tygodniowo</strong> umiarkowanego wysiłku.';
+
   function zbudujTytul(czesc, lewo) {
     var t = pozycja(el('header', 'tytul'), lewo + 'mm', '8mm');
     t.style.right = '10mm';
     t.style.height = '17mm';
     if (lewo <= 10) {
       t.innerHTML = '<h1>Wrocław dla zdrowia</h1><p>Mapa miejsc sprzyjających zdrowemu stylowi życia</p>';
+      if (!czesc) t.innerHTML += '<p class="who who--a3">' + WHO_TEKST + '</p>';
     } else {
-      t.innerHTML = '<p>Parki · baseny i kąpieliska · obiekty sportowe · inne miejsca zdrowia i rekreacji</p>';
+      t.innerHTML = '<p class="who">' + WHO_TEKST + '</p>';
     }
     if (czesc) t.innerHTML += '<p class="tytul__czesc">' + czesc + '</p>';
     return t;
@@ -176,17 +186,79 @@
       dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false,
       keyboard: false, touchZoom: false, inertia: false, fadeAnimation: false, zoomAnimation: false
     });
-    var t = L.tileLayer(W.TILE_URL, { maxZoom: 19, attribution: W.ATTRIBUTION });
-    t.on('load', function () { stan.wczytane++; pokazStatus(); });
-    t.on('tileerror', function () { stan.bledyKafelkow++; pokazStatus(); });
-    t.addTo(m);
-    MIEJSCA.forEach(function (mi) {
-      L.marker([mi.wspolrzedne.lat, mi.wspolrzedne.lon], {
-        icon: W.znacznikDruku(KAT[mi.kategoria], mi.id), interactive: false, keyboard: false
-      }).addTo(m);
-    });
+    m.attributionControl.setPrefix(false);
+    if (PODKLAD === 'osm') {
+      var t = L.tileLayer(W.TILE_URL, { maxZoom: 19, attribution: W.ATTRIBUTION });
+      t.on('load', function () { stan.wczytane++; pokazStatus(); });
+      t.on('tileerror', function () { stan.bledyKafelkow++; pokazStatus(); });
+      t.addTo(m);
+    }
     stan.mapy.push(m);
     return m;
+  }
+
+  // Podkład z mapy podstawowej Wrocławia (usługa WMS SIP, warunki: „bez ograniczeń”).
+  // Jeden obraz na całą mapę, w wyższej rozdzielczości niż ekran — ostry na wydruku.
+  var WMS_SIP = 'https://gis1.um.wroc.pl/arcgis/services/ogc/OGC_mpodst/MapServer/WmsServer';
+  var WMS_WARSTWY = 'PokrycieTerenu_Zabudowa,PokrycieTerenu_Zielen,ZielenWysoka,Wody,PowierzchnieUlic,LinieKolejowe,GranicaMiasta';
+  function dodajPodkladSip(mapa) {
+    var crs = L.CRS.EPSG3857, b = mapa.getBounds(), r = mapa.getSize(), skala = 2;
+    var sw = crs.project(b.getSouthWest()), ne = crs.project(b.getNorthEast());
+    var url = WMS_SIP + '?' + new URLSearchParams({
+      service: 'WMS', request: 'GetMap', version: '1.3.0', layers: WMS_WARSTWY, styles: '',
+      crs: 'EPSG:3857', bbox: [sw.x, sw.y, ne.x, ne.y].join(','),
+      width: r.x * skala, height: r.y * skala, format: 'image/png', transparent: 'false'
+    }).toString();
+    var img = L.imageOverlay(url, b, { attribution: 'Podkład: SIP Wrocławia' });
+    img.on('load', function () { stan.wczytane++; pokazStatus(); });
+    img.on('error', function () { stan.bledyKafelkow++; pokazStatus(); });
+    img.addTo(mapa);
+  }
+
+  // Rozsuwa znaczniki, które na danym powiększeniu nachodziłyby na siebie.
+  // Zwraca położenie każdego znacznika w pikselach (globalnych, dla powiększenia z).
+  function rozsunZnaczniki(z) {
+    var crs = L.CRS.EPSG3857, MIN = 30;
+    var pkt = MIEJSCA.map(function (m) {
+      var p = crs.latLngToPoint(L.latLng(m.wspolrzedne.lat, m.wspolrzedne.lon), z);
+      return { id: m.id, x0: p.x, y0: p.y, x: p.x, y: p.y };
+    });
+    for (var it = 0; it < 300; it++) {
+      var ruch = false;
+      for (var i = 0; i < pkt.length; i++) {
+        for (var j = i + 1; j < pkt.length; j++) {
+          var a = pkt[i], b = pkt[j], dx = b.x - a.x, dy = b.y - a.y, d = Math.sqrt(dx * dx + dy * dy);
+          if (d < MIN) {
+            if (d < 0.01) { dx = 1; dy = 0; d = 1; }
+            var k = (MIN - d) / 2 + 0.5;
+            a.x -= dx / d * k; a.y -= dy / d * k; b.x += dx / d * k; b.y += dy / d * k;
+            ruch = true;
+          }
+        }
+      }
+      if (!ruch) break;
+    }
+    return pkt;
+  }
+
+  function dodajZnaczniki(mapa, z, pkt) {
+    var crs = L.CRS.EPSG3857;
+    pkt.forEach(function (p) {
+      var mi = MIEJSCA.filter(function (m) { return m.id === p.id; })[0];
+      var prawdziwe = crs.pointToLatLng(L.point(p.x0, p.y0), z);
+      var pokazane = crs.pointToLatLng(L.point(p.x, p.y), z);
+      if (Math.abs(p.x - p.x0) + Math.abs(p.y - p.y0) > 3) {
+        // znacznik przesunięty — cienka linia i kropka pokazują dokładne miejsce
+        L.polyline([prawdziwe, pokazane], { color: '#1d2a20', weight: 1.2, interactive: false }).addTo(mapa);
+        L.circleMarker(prawdziwe, { radius: 2.5, color: '#1d2a20', weight: 1, fillColor: '#1d2a20', fillOpacity: 1, interactive: false }).addTo(mapa);
+      }
+      L.marker(pokazane, { icon: W.znacznikDruku(KAT[mi.kategoria], mi.id), interactive: false, keyboard: false }).addTo(mapa);
+    });
+  }
+
+  function wykonczMape(mapa, z, pkt) {
+    if (PODKLAD === 'sip') dodajPodkladSip(mapa);
+    dodajZnaczniki(mapa, z, pkt);
   }
 
   // Dobiera powiększenie i środek tak, żeby wszystkie miejsca zmieściły się
@@ -253,9 +325,8 @@
 
     // Przesuń całość w poziomie, jeśli jakiś znacznik wypadłby na linii sklejenia.
     var szew = wL;                                 // pozycja szwu w pikselach całej mapy
-    var xs = MIEJSCA.map(function (m) {
-      return L.CRS.EPSG3857.latLngToPoint(L.latLng(m.wspolrzedne.lat, m.wspolrzedne.lon), fit.zoom).x;
-    });
+    var pkt = rozsunZnaczniki(fit.zoom);
+    var xs = pkt.map(function (p) { return p.x; });
     var odstep = 22;                               // ok. 6 mm wolnego miejsca od szwu
     function kolizja(o) { return xs.some(function (x) { return Math.abs(x - o - szew) < odstep; }); }
     function mieszczaSie(o) { return xs.every(function (x) { return x - o > 20 && x - o < calosc - 20; }); }
@@ -268,6 +339,8 @@
     }
     ustawOrigin(mapa1, najlepszy, oy, fit.zoom, wL, h);
     ustawOrigin(mapa2, najlepszy + wL - zak, oy, fit.zoom, wP, h);
+    wykonczMape(mapa1, fit.zoom, pkt);
+    wykonczMape(mapa2, fit.zoom, pkt);
     L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(mapa1);
     return 2;
   }
@@ -285,6 +358,7 @@
     var mapa = nowaMapa(m);
     var fit = dopasuj(w, h, px(10));
     ustawOrigin(mapa, Math.round(fit.srodek.x - w / 2), Math.round(fit.srodek.y - h / 2), fit.zoom, w, h);
+    wykonczMape(mapa, fit.zoom, rozsunZnaczniki(fit.zoom));
     L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(mapa);
     return 1;
   }
@@ -293,7 +367,7 @@
   var statusEl = document.getElementById('status-mapy');
   function pokazStatus() {
     var n = stan.mapy.length;
-    if (location.protocol === 'file:') {
+    if (location.protocol === 'file:' && PODKLAD === 'osm') {
       statusEl.className = 'komunikat blad';
       statusEl.textContent = W.KOMUNIKAT_FILE;
     } else if (stan.bledyKafelkow > 0) {
@@ -335,6 +409,7 @@
   stan.autor = params.get('autor') || przypomnij('autor') || '';
   if (!stan.autor && DANE.meta.autor && !/^UZUPEŁNIJ/i.test(DANE.meta.autor)) stan.autor = DANE.meta.autor;
   stan.uklad = (params.get('uklad') || przypomnij('uklad')) === 'a3' ? 'a3' : 'a4x2';
+  if (PODKLAD === 'sip') document.body.classList.add('podklad-sip');
 
   // Jeśli strona do druku jest otwarta z publicznego adresu (np. GitHub Pages), podpowiedz adres strony głównej.
   if (!stan.url && location.protocol === 'https:') {

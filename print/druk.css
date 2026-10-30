@@ -145,3 +145,9 @@ body { margin: 0; background: #e7ebe5; }
 .arkusz--a3 .zrodla-druk { font-size: 7.6pt; }
 .arkusz--a3 .tytul h1 { font-size: 34pt; }
 .arkusz--a3 .tytul p { font-size: 13pt; }
+
+/* Zalecenie WHO w nagłówku prawej kartki */
+.tytul p.who { font-size: 9.5pt; color: var(--tekst); line-height: 1.3; max-width: 175mm; }
+.tytul p.who strong { color: var(--zielony-ciemny); }
+.arkusz--a3 .tytul p.who { font-size: 11pt; max-width: none; }
+.tytul p.who--a3 { margin-left: auto !important; max-width: 150mm; text-align: right; font-size: 10pt; }
