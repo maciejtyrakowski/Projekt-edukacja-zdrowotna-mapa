@@ -2,7 +2,7 @@
 // Po zmianie places.json uruchom: python tools/zbuduj_dane.py
 window.WDZ_DANE = {
   "meta": {
-    "tytul": "Wrocław dla zdrowia — mapa miejsc prozdrowotnych",
+    "tytul": "Zdrowe miejsca we Wrocławiu — mapa miejsc prozdrowotnych",
     "data_weryfikacji": "2026-10-30",
     "uwaga": "Adresy pochodzą z oficjalnych stron miasta (wroclaw.pl) lub z Wikipedii, zgodnie z polem 'zrodla'. Współrzędne oznaczone jako 'przyblizone' NIE zostały potwierdzone w źródle: przed drukiem sprawdź je skryptem tools/sprawdz_wspolrzedne.py albo ręcznie.",
     "kategorie": {

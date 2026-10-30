@@ -1,4 +1,4 @@
-/* Wrocław dla zdrowia — interaktywna mapa (Leaflet 1.9.4). */
+/* Zdrowe miejsca we Wrocławiu — interaktywna mapa (Leaflet 1.9.4). */
 (function () {
   'use strict';
 

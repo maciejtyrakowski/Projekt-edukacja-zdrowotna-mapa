@@ -1,4 +1,4 @@
-/* Wrocław dla zdrowia — generowanie arkuszy do druku (2 × A4 lub A3) i kodu QR. */
+/* Zdrowe miejsca we Wrocławiu — generowanie arkuszy do druku (2 × A4 lub A3) i kodu QR. */
 (function () {
   'use strict';
 
@@ -164,7 +164,7 @@
     t.style.right = '10mm';
     t.style.height = '17mm';
     if (lewo <= 10) {
-      t.innerHTML = '<h1>Wrocław dla zdrowia</h1><p>Mapa miejsc sprzyjających zdrowemu stylowi życia</p>';
+      t.innerHTML = '<h1>Zdrowe miejsca we Wrocławiu</h1><p>Mapa miejsc sprzyjających zdrowemu stylowi życia</p>';
       if (!czesc) t.innerHTML += '<p class="who who--a3">' + WHO_TEKST + '</p>';
     } else {
       t.innerHTML = '<p class="who">' + WHO_TEKST + '</p>';
@@ -391,7 +391,7 @@
     document.getElementById('styl-strony').textContent =
       '@page { size: ' + (stan.uklad === 'a3' ? UKLADY.a3.strona : UKLADY.a4x2.strona) + '; margin: 0; }';
     var ile = stan.uklad === 'a3' ? arkuszA3(kontener) : arkuszA4x2(kontener);
-    document.title = 'Wrocław dla zdrowia — wydruk (' + (stan.uklad === 'a3' ? 'A3' : '2 × A4') + ')';
+    document.title = 'Zdrowe miejsca we Wrocławiu — wydruk (' + (stan.uklad === 'a3' ? 'A3' : '2 × A4') + ')';
     pokazStatus();
     return ile;
   }

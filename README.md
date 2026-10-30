@@ -1,4 +1,4 @@
-# Wrocław dla zdrowia — mapa miejsc prozdrowotnych
+# Zdrowe miejsca we Wrocławiu — mapa
 
 **Strona:** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/
 **Plakat do druku (2 × A4 / A3):** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/print/druk.html
