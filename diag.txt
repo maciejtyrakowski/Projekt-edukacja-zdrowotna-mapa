@@ -1,0 +1,3 @@
+WMS GetCapabilities: 200 w 4.542158s
+a4x2: mapa gotowa (próba 1)
+a3: mapa gotowa (próba 1)
