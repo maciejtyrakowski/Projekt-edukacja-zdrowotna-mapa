@@ -1,0 +1,617 @@
+[
+  {
+    "type": "node",
+    "id": 9124571732,
+    "lat": 51.1161309,
+    "lon": 17.0336719,
+    "tags": {
+      "board_type": "history",
+      "image": "https://photos.app.goo.gl/nSd5YbBgmgSwb9ST9",
+      "information": "board",
+      "name": "Wyspa Słodowa",
+      "tourism": "information"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10186710769,
+    "lat": 51.1197334,
+    "lon": 17.0364471,
+    "tags": {
+      "leisure": "pitch",
+      "sport": "chess"
+    }
+  },
+  {
+    "type": "node",
+    "id": 10550634908,
+    "lat": 51.1158324,
+    "lon": 17.0381252,
+    "tags": {
+      "board_type": "history",
+      "description": "historia wyspy wraz z nazwami, po polsku i angielsku",
+      "information": "board",
+      "inscription": "Wyspa Słodowa",
+      "inscription:en": "Słodowa (Malt) Island",
+      "name": "Wyspa Słodowa",
+      "tourism": "information"
+    }
+  },
+  {
+    "type": "way",
+    "id": 27833797,
+    "lat": 51.1159351,
+    "lon": 17.040622,
+    "tags": {
+      "highway": "living_street",
+      "lanes": "2",
+      "lit": "yes",
+      "maxspeed": "20",
+      "name": "Wyspa Słodowa",
+      "note": "dojazd do hotelu",
+      "oneway": "no",
+      "source:maxspeed": "PL:living_street",
+      "source:name": "sign",
+      "surface": "sett"
+    }
+  },
+  {
+    "type": "way",
+    "id": 32343150,
+    "lat": 51.1160847,
+    "lon": 17.03747,
+    "tags": {
+      "alt_name:en": "Malt Island",
+      "name": "Wyspa Słodowa",
+      "name:de": "Vorderbleiche",
+      "name:en": "Słodowa Island",
+      "name:pl": "Wyspa Słodowa",
+      "place": "islet",
+      "source:alt_name:en": "tabliczka na wyspie",
+      "source:name": "tabliczka na wyspie",
+      "teryt:name": "wyspa Słodowa",
+      "wikidata": "Q7667302",
+      "wikipedia": "pl:Wyspa Słodowa"
+    }
+  },
+  {
+    "type": "way",
+    "id": 32343151,
+    "lat": 51.1171181,
+    "lon": 17.0384869,
+    "tags": {
+      "name": "Wyspa Bielarska",
+      "old_name:de": "Hinterbleiche",
+      "place": "islet",
+      "teryt:name": "wyspa Bielarska"
+    }
+  },
+  {
+    "type": "way",
+    "id": 235810220,
+    "lat": 51.0969901,
+    "lon": 17.1062544,
+    "tags": {
+      "leisure": "pitch",
+      "lit": "no",
+      "sport": "skateboard",
+      "surface": "asphalt"
+    }
+  },
+  {
+    "type": "way",
+    "id": 272670987,
+    "lat": 51.1359637,
+    "lon": 17.0440427,
+    "tags": {
+      "description": "park rekreacyjny, ogólnodostępny",
+      "landuse": "recreation_ground",
+      "name": "Polana Karłowicka",
+      "opening_hours": "24/7",
+      "source:name": "UCHWAŁA NR LXIII/1560/18",
+      "wheelchair": "yes"
+    }
+  },
+  {
+    "type": "way",
+    "id": 306478641,
+    "lat": 51.1160764,
+    "lon": 16.9532843,
+    "tags": {
+      "area": "yes",
+      "leisure": "track",
+      "sport": "running"
+    }
+  },
+  {
+    "type": "way",
+    "id": 306478642,
+    "lat": 51.1145251,
+    "lon": 16.9539368,
+    "tags": {
+      "area": "yes",
+      "lanes": "3",
+      "leisure": "track",
+      "sport": "running"
+    }
+  },
+  {
+    "type": "way",
+    "id": 313048567,
+    "lat": 51.1180618,
+    "lon": 16.9535092,
+    "tags": {
+      "barrier": "fence",
+      "leisure": "sports_centre",
+      "opening_hours": "Mo-Fr 06:00-23:00; Sa-Su 08:00-22:00"
+    }
+  },
+  {
+    "type": "way",
+    "id": 335227780,
+    "lat": 51.1170089,
+    "lon": 17.0375885,
+    "tags": {
+      "access": "yes",
+      "leisure": "playground",
+      "playground:theme": "ship",
+      "surface": "sand"
+    }
+  },
+  {
+    "type": "way",
+    "id": 335227781,
+    "lat": 51.1173701,
+    "lon": 17.0381931,
+    "tags": {
+      "access": "yes",
+      "leisure": "playground",
+      "playground:theme": "ship",
+      "surface": "sand"
+    }
+  },
+  {
+    "type": "way",
+    "id": 335227782,
+    "lat": 51.1173143,
+    "lon": 17.0386404,
+    "tags": {
+      "access": "yes",
+      "leisure": "playground",
+      "surface": "fine_gravel"
+    }
+  },
+  {
+    "type": "way",
+    "id": 335227784,
+    "lat": 51.1169589,
+    "lon": 17.0381741,
+    "tags": {
+      "access": "yes",
+      "leisure": "playground"
+    }
+  },
+  {
+    "type": "way",
+    "id": 371648495,
+    "lat": 51.1378688,
+    "lon": 17.0424891,
+    "tags": {
+      "access": "private",
+      "hoops": "2",
+      "leisure": "pitch",
+      "sport": "basketball",
+      "surface": "asphalt"
+    }
+  },
+  {
+    "type": "way",
+    "id": 371648497,
+    "lat": 51.1382255,
+    "lon": 17.0424885,
+    "tags": {
+      "access": "private",
+      "leisure": "pitch",
+      "sport": "handball;futsal",
+      "surface": "asphalt"
+    }
+  },
+  {
+    "type": "way",
+    "id": 375669039,
+    "lat": 51.1373824,
+    "lon": 17.0578594,
+    "tags": {
+      "leisure": "pitch",
+      "sport": "skateboard"
+    }
+  },
+  {
+    "type": "way",
+    "id": 381752695,
+    "lat": 51.1185232,
+    "lon": 17.0398236,
+    "tags": {
+      "barrier": "fence",
+      "leisure": "playground"
+    }
+  },
+  {
+    "type": "way",
+    "id": 436613750,
+    "lat": 51.1172347,
+    "lon": 17.0389215,
+    "tags": {
+      "leisure": "fitness_station",
+      "lit": "yes",
+      "opening_hours": "24/7",
+      "sport": "fitness"
+    }
+  },
+  {
+    "type": "way",
+    "id": 438647573,
+    "lat": 51.0426126,
+    "lon": 16.9710587,
+    "tags": {
+      "leisure": "pitch",
+      "opening_hours": "24/7",
+      "sport": "skateboard",
+      "surface": "concrete"
+    }
+  },
+  {
+    "type": "way",
+    "id": 484350082,
+    "lat": 51.1180064,
+    "lon": 16.9398545,
+    "tags": {
+      "area": "no",
+      "leisure": "track",
+      "name": "Tor do jazdy szybkiej",
+      "smoothness": "excellent",
+      "width": "4"
+    }
+  },
+  {
+    "type": "way",
+    "id": 484350083,
+    "lat": 51.1178241,
+    "lon": 16.939281,
+    "tags": {
+      "area": "no",
+      "highway": "path",
+      "leisure": "track",
+      "name": "Tor do jazdy ulicznej",
+      "smoothness": "excellent",
+      "surface": "asphalt",
+      "width": "5"
+    }
+  },
+  {
+    "type": "way",
+    "id": 484916232,
+    "lat": 51.1179563,
+    "lon": 16.9393551,
+    "tags": {
+      "leisure": "sports_centre",
+      "name": "Tor wrotkarski WCT Spartan",
+      "sport": "roller_skating;ice_skating"
+    }
+  },
+  {
+    "type": "way",
+    "id": 487517890,
+    "lat": 51.1182563,
+    "lon": 16.9398867,
+    "tags": {
+      "area": "no",
+      "leisure": "track",
+      "lit": "yes",
+      "name": "Tor do jazdy szybkiej",
+      "smoothness": "excellent",
+      "width": "4"
+    }
+  },
+  {
+    "type": "way",
+    "id": 543904518,
+    "lat": 51.1180374,
+    "lon": 17.044537,
+    "tags": {
+      "hoops": "1",
+      "leisure": "pitch",
+      "sport": "basketball"
+    }
+  },
+  {
+    "type": "way",
+    "id": 543904519,
+    "lat": 51.1179599,
+    "lon": 17.04453,
+    "tags": {
+      "access": "yes",
+      "barrier": "fence",
+      "leisure": "playground"
+    }
+  },
+  {
+    "type": "way",
+    "id": 555571419,
+    "lat": 51.1356421,
+    "lon": 17.0440069,
+    "tags": {
+      "leisure": "fitness_station"
+    }
+  },
+  {
+    "type": "way",
+    "id": 555571424,
+    "lat": 51.1358029,
+    "lon": 17.0444933,
+    "tags": {
+      "leisure": "pitch",
+      "sport": "basketball;soccer"
+    }
+  },
+  {
+    "type": "way",
+    "id": 625287219,
+    "lat": 51.1119507,
+    "lon": 17.041595,
+    "tags": {
+      "leisure": "playground"
+    }
+  },
+  {
+    "type": "way",
+    "id": 725427756,
+    "lat": 51.1366131,
+    "lon": 16.9580767,
+    "tags": {
+      "image": "https://www.wroclaw.pl/cdn-cgi/image/w=1200,h=600,fit=crop,f=avif/beta2/files/news/408590/main/skatepark-reko-4.jpg",
+      "leisure": "pitch",
+      "lit": "yes",
+      "sport": "skateboard",
+      "start_date": "2023",
+      "surface": "concrete",
+      "url": "https://polska-org.pl/10955516,Wroclaw,Skatepark.html"
+    }
+  },
+  {
+    "type": "way",
+    "id": 784015236,
+    "lat": 51.1115456,
+    "lon": 17.0363715,
+    "tags": {
+      "access": "private",
+      "leisure": "playground"
+    }
+  },
+  {
+    "type": "way",
+    "id": 855008424,
+    "lat": 51.1356115,
+    "lon": 17.0445503,
+    "tags": {
+      "leisure": "pitch",
+      "sport": "basketball;soccer"
+    }
+  },
+  {
+    "type": "way",
+    "id": 920554745,
+    "lat": 51.1591672,
+    "lon": 17.1321444,
+    "tags": {
+      "leisure": "pitch",
+      "sport": "skateboard"
+    }
+  },
+  {
+    "type": "way",
+    "id": 941069934,
+    "lat": 51.1045162,
+    "lon": 17.1188936,
+    "tags": {
+      "image": "https://fotopolska.eu/1891932,foto.html",
+      "leisure": "pitch",
+      "name": "Skatepark Wielka Wyspa",
+      "source": "https://www.wroclaw.pl/rozmawia/bartoszowice-nowy-skatepark-na-wielkiej-wyspie",
+      "sport": "skateboard",
+      "start_date": "2021",
+      "url": "https://fotopolska.eu/Wroclaw/b438235,Skatepark_Wielka_Wyspa.html"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1006001833,
+    "lat": 51.1183354,
+    "lon": 16.9421762,
+    "tags": {
+      "fee": "no",
+      "leisure": "pitch",
+      "lit": "no",
+      "sport": "skateboard",
+      "start_date": "2021-12",
+      "surface": "asphalt"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1011198833,
+    "lat": 51.0963775,
+    "lon": 17.0322752,
+    "tags": {
+      "access": "yes",
+      "fee": "no",
+      "image": "https://www.wroclaw.pl/files/cmsdocuments/56421993/skateprak333.jpg",
+      "leisure": "pitch",
+      "lit": "yes",
+      "location": "outdoor",
+      "sport": "skateboard",
+      "start_date": "2021-12",
+      "surface": "concrete",
+      "video": "https://www.youtube.com/watch?v=TbochCxVB3w"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1074472625,
+    "lat": 51.1119202,
+    "lon": 17.0383498,
+    "tags": {
+      "image": "https://polska-org.pl/9667185,foto.html",
+      "leisure": "fitness_station",
+      "sport": "fitness"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1075488712,
+    "lat": 51.111479,
+    "lon": 17.0371285,
+    "tags": {
+      "access": "yes",
+      "barrier": "fence",
+      "leisure": "playground"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1116839835,
+    "lat": 51.111327,
+    "lon": 17.0423982,
+    "tags": {
+      "leisure": "playground"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1158141303,
+    "lat": 51.1113893,
+    "lon": 17.0371297,
+    "tags": {
+      "access": "yes",
+      "leisure": "fitness_station"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1235678523,
+    "lat": 51.118865,
+    "lon": 16.9390382,
+    "tags": {
+      "building": "yes",
+      "leisure": "ice_rink",
+      "name": "Lodowisko/Rolkowisko WCT Spartan",
+      "opening_hours": "Nov-Feb: Mo-Fr 16:00-22:00; Sa-Su,PH 08:00-22:00; 19:00-20:00 off; Sa-Su,PH 12:00-13:00,16:00-17:00,19:00-20:00 off",
+      "sport": "ice_skating",
+      "website": "https://spartan.wroc.pl/sukielicka/lodowisko"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1237512301,
+    "lat": 51.1393037,
+    "lon": 17.1749309,
+    "tags": {
+      "leisure": "pitch",
+      "name": "Skatepark",
+      "sport": "skateboard",
+      "surface": "concrete"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1279349759,
+    "lat": 51.145903,
+    "lon": 16.9400897,
+    "tags": {
+      "leisure": "fitness_station",
+      "surface": "fine_gravel"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1319309406,
+    "lat": 51.0641378,
+    "lon": 16.9727737,
+    "tags": {
+      "leisure": "pitch",
+      "lit": "no",
+      "sport": "skateboard",
+      "start_date": "2024",
+      "surface": "concrete"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1387535909,
+    "lat": 51.1181305,
+    "lon": 16.9398723,
+    "tags": {
+      "area": "yes",
+      "leisure": "track",
+      "lit": "yes",
+      "surface": "concrete"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1414295767,
+    "lat": 51.1150494,
+    "lon": 16.9541917,
+    "tags": {
+      "area": "yes",
+      "athletics": "long_jump",
+      "leisure": "track",
+      "sport": "athletics"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1512765085,
+    "lat": 51.0912249,
+    "lon": 16.8984328,
+    "tags": {
+      "access": "yes",
+      "leisure": "pitch",
+      "lit": "yes",
+      "sport": "skateboard",
+      "surface": "concrete"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1525314870,
+    "lat": 51.1479878,
+    "lon": 17.0412568,
+    "tags": {
+      "leisure": "pitch",
+      "sport": "skateboard"
+    }
+  },
+  {
+    "type": "way",
+    "id": 1568368053,
+    "lat": 51.1407013,
+    "lon": 16.9462866,
+    "tags": {
+      "leisure": "fitness_station",
+      "sport": "fitness",
+      "start_date": "2026-10"
+    }
+  },
+  {
+    "type": "relation",
+    "id": 11795046,
+    "lat": 51.0803412,
+    "lon": 17.0450829,
+    "tags": {
+      "leisure": "pitch",
+      "sport": "skateboard",
+      "type": "multipolygon"
+    }
+  }
+]

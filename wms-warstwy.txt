@@ -1,0 +1,13 @@
+PokrycieTerenu_Zielen
+PokrycieTerenu_Zabudowa
+Wody
+GranicaMiasta
+ZielenWysoka
+Budynki
+PowierzchnieUlic
+LinieKolejowe
+ObrysyUlic
+OsieUlic
+NumeryDrog
+NazwyUlic
+PunktyAdresowe

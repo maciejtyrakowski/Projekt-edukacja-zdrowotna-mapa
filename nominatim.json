@@ -1,0 +1,187 @@
+[
+  {
+    "nazwa": "Polana Karłowicka",
+    "zapytania": [
+      {
+        "q": "Polana Karłowicka, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Polana Karłowicka, Karłowice, Karłowice-Różanka, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.1362123",
+            "lon": "17.0439595",
+            "category": "landuse",
+            "type": "recreation_ground",
+            "osm_type": "way",
+            "osm_id": 272670987
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nazwa": "Wyspa Słodowa",
+    "zapytania": [
+      {
+        "q": "Wyspa Słodowa, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Wyspa Słodowa, Ostrów Tumski, Stare Miasto, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.1160692",
+            "lon": "17.0373468",
+            "category": "place",
+            "type": "islet",
+            "osm_type": "way",
+            "osm_id": 32343150
+          },
+          {
+            "display_name": "Wyspa Słodowa, Ostrów Tumski, Stare Miasto, Wrocław, województwo dolnośląskie, 50-266, Polska",
+            "lat": "51.1159351",
+            "lon": "17.0406222",
+            "category": "highway",
+            "type": "living_street",
+            "osm_type": "way",
+            "osm_id": 27833797
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nazwa": "Wyspa Bielarska",
+    "zapytania": [
+      {
+        "q": "Wyspa Bielarska, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Wyspa Bielarska, Ostrów Tumski, Stare Miasto, Wrocław, województwo dolnośląskie, Polska",
+            "lat": "51.1171203",
+            "lon": "17.0383750",
+            "category": "place",
+            "type": "islet",
+            "osm_type": "way",
+            "osm_id": 32343151
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nazwa": "Skatepark Ślężna/Borowska",
+    "zapytania": [
+      {
+        "q": "Skatepark, Ślężna, Wrocław",
+        "wyniki": []
+      },
+      {
+        "q": "Ślężna, Borowska, Wrocław",
+        "wyniki": []
+      }
+    ]
+  },
+  {
+    "nazwa": "Tor wrotkarski Park Tysiąclecia",
+    "zapytania": [
+      {
+        "q": "Rolkowisko, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Lodowisko/Rolkowisko WCT Spartan, Tor do jazdy ulicznej, Nowy Dwór, Wrocław, województwo dolnośląskie, 54-310, Polska",
+            "lat": "51.1188650",
+            "lon": "16.9390382",
+            "category": "leisure",
+            "type": "ice_rink",
+            "osm_type": "way",
+            "osm_id": 1235678523
+          },
+          {
+            "display_name": "Park Tysiąclecia – Rolkowisko/Lodowisko, Rogowska, Nowy Dwór, Wrocław, województwo dolnośląskie, 54-311, Polska",
+            "lat": "51.1177218",
+            "lon": "16.9461252",
+            "category": "railway",
+            "type": "tram_stop",
+            "osm_type": "node",
+            "osm_id": 11160434930
+          },
+          {
+            "display_name": "Park Tysiąclecia – Rolkowisko/Lodowisko, Rogowska, Nowy Dwór, Wrocław, województwo dolnośląskie, 54-313, Polska",
+            "lat": "51.1183524",
+            "lon": "16.9462969",
+            "category": "railway",
+            "type": "tram_stop",
+            "osm_type": "node",
+            "osm_id": 11160434929
+          }
+        ]
+      },
+      {
+        "q": "Lodowisko Spartan, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Lodowisko/Rolkowisko WCT Spartan, Tor do jazdy ulicznej, Nowy Dwór, Wrocław, województwo dolnośląskie, 54-310, Polska",
+            "lat": "51.1188650",
+            "lon": "16.9390382",
+            "category": "leisure",
+            "type": "ice_rink",
+            "osm_type": "way",
+            "osm_id": 1235678523
+          }
+        ]
+      },
+      {
+        "q": "WCT Spartan, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "WCT Spartan, Rafała Krajewskiego, Sępolno, Biskupin-Sępolno-Dąbie-Bartoszowice, Wrocław, województwo dolnośląskie, 51-690, Polska",
+            "lat": "51.1098607",
+            "lon": "17.0969448",
+            "category": "leisure",
+            "type": "sports_centre",
+            "osm_type": "way",
+            "osm_id": 235233686
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nazwa": "Wrocławskie Centrum SPA",
+    "zapytania": [
+      {
+        "q": "Wrocławskie Centrum SPA, Wrocław",
+        "wyniki": [
+          {
+            "display_name": "Wrocławskie Centrum SPA, Mennicza, Dzielnica Czterech Wyznań, Stare Miasto, Wrocław, województwo dolnośląskie, 50-057, Polska",
+            "lat": "51.1057356",
+            "lon": "17.0349155",
+            "category": "leisure",
+            "type": "sports_centre",
+            "osm_type": "way",
+            "osm_id": 101130122
+          },
+          {
+            "display_name": "Wrocławskie Centrum SPA, Teatralna, Dzielnica Czterech Wyznań, Stare Miasto, Wrocław, województwo dolnośląskie, 50-055, Polska",
+            "lat": "51.1054686",
+            "lon": "17.0343851",
+            "category": "leisure",
+            "type": "fitness_centre",
+            "osm_type": "node",
+            "osm_id": 6109701722
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nazwa": "Siłownia WK Dzik Tarczyński Arena",
+    "zapytania": [
+      {
+        "q": "WK Dzik, Wrocław",
+        "wyniki": []
+      },
+      {
+        "q": "Siłownia plenerowa, aleja Śląska, Wrocław",
+        "wyniki": []
+      }
+    ]
+  }
+]
