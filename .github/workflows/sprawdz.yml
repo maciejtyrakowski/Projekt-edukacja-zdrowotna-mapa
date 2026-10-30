@@ -1,0 +1,35 @@
+name: Sprawdzenie danych
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - tools/sprawdz_ci.py
+      - data/geokod-zapytania.json
+      - .github/workflows/sprawdz.yml
+
+permissions:
+  contents: write
+
+jobs:
+  sprawdz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/sprawdz_ci.py
+      - name: Zapisz wyniki na gałęzi sprawdzenie (main bez zmian)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp -r raport /tmp/raport
+          git checkout --orphan sprawdzenie
+          git rm -rf --cached . > /dev/null
+          rm -rf ./* .github
+          cp -r /tmp/raport/* .
+          git add -A
+          git commit -m "Wyniki sprawdzenia $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin sprawdzenie
