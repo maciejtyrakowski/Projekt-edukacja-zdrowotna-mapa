@@ -1,8 +1,48 @@
 [
-  {"nazwa": "Polana Karłowicka", "geokod": ["Polana Karłowicka, Wrocław"]},
-  {"nazwa": "Wyspa Słodowa", "geokod": ["Wyspa Słodowa, Wrocław"]},
-  {"nazwa": "Wyspa Bielarska", "geokod": ["Wyspa Bielarska, Wrocław"]},
-  {"nazwa": "Skatepark Ślężna/Borowska", "geokod": ["Skatepark, Ślężna, Wrocław", "Ślężna, Borowska, Wrocław"]},
-  {"nazwa": "Tor wrotkarski Park Tysiąclecia", "geokod": ["Rolkowisko, Wrocław", "Lodowisko Spartan, Wrocław", "WCT Spartan, Wrocław"]},
-  {"nazwa": "Wrocławskie Centrum SPA", "geokod": ["Wrocławskie Centrum SPA, Wrocław"]}
+  {
+    "nazwa": "Polana Karłowicka",
+    "geokod": [
+      "Polana Karłowicka, Wrocław"
+    ]
+  },
+  {
+    "nazwa": "Wyspa Słodowa",
+    "geokod": [
+      "Wyspa Słodowa, Wrocław"
+    ]
+  },
+  {
+    "nazwa": "Wyspa Bielarska",
+    "geokod": [
+      "Wyspa Bielarska, Wrocław"
+    ]
+  },
+  {
+    "nazwa": "Skatepark Ślężna/Borowska",
+    "geokod": [
+      "Skatepark, Ślężna, Wrocław",
+      "Ślężna, Borowska, Wrocław"
+    ]
+  },
+  {
+    "nazwa": "Tor wrotkarski Park Tysiąclecia",
+    "geokod": [
+      "Rolkowisko, Wrocław",
+      "Lodowisko Spartan, Wrocław",
+      "WCT Spartan, Wrocław"
+    ]
+  },
+  {
+    "nazwa": "Wrocławskie Centrum SPA",
+    "geokod": [
+      "Wrocławskie Centrum SPA, Wrocław"
+    ]
+  },
+  {
+    "nazwa": "Siłownia WK Dzik Tarczyński Arena",
+    "geokod": [
+      "WK Dzik, Wrocław",
+      "Siłownia plenerowa, aleja Śląska, Wrocław"
+    ]
+  }
 ]

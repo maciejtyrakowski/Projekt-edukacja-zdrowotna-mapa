@@ -62,10 +62,20 @@ out center tags;
 
 
 def overpass():
+    d, bledy = None, []
+    for serwer in ("https://overpass-api.de/api/interpreter",
+                   "https://overpass.private.coffee/api/interpreter",
+                   "https://overpass-api.de/api/interpreter"):
+        try:
+            raw, _ = get(serwer, data=urllib.parse.urlencode({"data": OVERPASS}).encode())
+            d = json.loads(raw)
+            break
+        except Exception as e:
+            bledy.append(f"{serwer}: {e}")
+            time.sleep(20)
     try:
-        raw, _ = get("https://overpass-api.de/api/interpreter",
-                     data=urllib.parse.urlencode({"data": OVERPASS}).encode())
-        d = json.loads(raw)
+        if d is None:
+            raise RuntimeError("; ".join(bledy))
         el = [{"type": e["type"], "id": e["id"],
                "lat": e.get("lat") or e.get("center", {}).get("lat"),
                "lon": e.get("lon") or e.get("center", {}).get("lon"),
