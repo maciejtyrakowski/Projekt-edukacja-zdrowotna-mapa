@@ -143,9 +143,8 @@
       'Stan danych: ' + esc(W.formatujDate(DANE.meta.data_weryfikacji)) + '. Godziny i ceny sprawdzaj na stronach obiektów.</p>';
     if (przyblizone > 0) {
       html += '<p>* Położenie ' + przyblizone + (przyblizone === 1 ? ' miejsca' : ' miejsc') + ' jest przybliżone i wymaga weryfikacji.</p>';
-      html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI).</p>';
     } else {
-      html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI). Dane lokalizacyjne zweryfikowano w podanych źródłach.</p>';
+      html += '<p>Dane lokalizacyjne zweryfikowano w podanych źródłach.</p>';
     }
     zr.innerHTML = html;
     dol.appendChild(zr);
