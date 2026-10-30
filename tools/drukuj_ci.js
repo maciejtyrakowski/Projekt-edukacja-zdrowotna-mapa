@@ -23,7 +23,8 @@ const STRONA = 'https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-ma
         log.push(uklad + ': mapa gotowa (próba ' + proba + ')');
         gotowe = true;
       } catch (e) {
-        log.push(uklad + ': próba ' + proba + ' nieudana: ' + e.message.split('\n')[0]);
+        let st = ''; try { st = await p.textContent('#status-mapy'); } catch (x) {}
+        log.push(uklad + ': próba ' + proba + ' nieudana: ' + e.message.split('\n')[0] + ' | status: ' + st);
         await new Promise(r => setTimeout(r, 15000));
       }
       await p.close();

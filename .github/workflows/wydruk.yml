@@ -28,11 +28,13 @@ jobs:
           npm install playwright@1.47.2
           npx playwright install --with-deps chromium
       - name: Wygeneruj PDF
+        continue-on-error: true
         run: |
           python3 -m http.server 8000 > /dev/null 2>&1 &
           sleep 2
-          node tools/drukuj_ci.js
-          cat wydruk/log.txt
+          curl -sS -m 60 -o /dev/null -w "WMS GetCapabilities: %{http_code} w %{time_total}s\n" "https://gis1.um.wroc.pl/arcgis/services/ogc/OGC_mpodst/MapServer/WmsServer?service=WMS&request=GetCapabilities" >> diag.txt 2>&1 || echo "WMS curl blad" >> diag.txt
+          node tools/drukuj_ci.js >> diag.txt 2>&1 || echo "skrypt zakonczony bledem" >> diag.txt
+          mkdir -p wydruk && cp diag.txt wydruk/diag.txt
       - name: Zapisz PDF na gałęzi wydruk (main bez zmian)
         run: |
           git config user.name "github-actions[bot]"
@@ -44,4 +46,4 @@ jobs:
           cp /tmp/wydruk/* .
           git add -A
           git commit -m "Pliki do druku $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push -f origin wydruk
+          git push -f origin wydruk-test
