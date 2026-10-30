@@ -155,3 +155,5 @@ body { margin: 0; background: #e7ebe5; }
 /* Tytuł zawsze w jednej linii */
 .tytul h1 { white-space: nowrap; }
 .tytul p.who--a3 { max-width: 165mm; font-size: 9.5pt; }
+/* A3: bez podtytułu — tytuł i zalecenie WHO mieszczą się w jednym rzędzie */
+.arkusz--a3 .tytul > p:not(.who) { display: none; }

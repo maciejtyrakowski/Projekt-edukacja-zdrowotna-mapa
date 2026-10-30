@@ -169,7 +169,6 @@
     } else {
       t.innerHTML = '<p class="who">' + WHO_TEKST + '</p>';
     }
-    if (czesc) t.innerHTML += '<p class="tytul__czesc">' + czesc + '</p>';
     return t;
   }
 
