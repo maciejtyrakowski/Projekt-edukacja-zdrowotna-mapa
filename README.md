@@ -38,7 +38,7 @@ Biblioteki są zapisane w projekcie, a nie pobierane z CDN. Uwaga: po otwarciu p
 | # | Zadanie | Dlaczego |
 |---|---------|----------|
 | 1 | Uzupełnij pole `"autor"` w `data/places.json` i uruchom `python tools/zbuduj_dane.py`. | Teraz jest tam `UZUPEŁNIJ: imię i nazwisko, klasa`. |
-| 2 | Kliknij na mapie każde miejsce i sprawdź, czy znacznik stoi we właściwym punkcie. | Współrzędne wszystkich 19 miejsc pochodzą z OpenStreetMap (link przy każdym miejscu), ale warto obejrzeć je samemu. |
+| 2 | Kliknij na mapie każde miejsce i sprawdź, czy znacznik stoi we właściwym punkcie. | Współrzędne wszystkich 22 miejsc pochodzą z OpenStreetMap (link przy każdym miejscu), ale warto obejrzeć je samemu. |
 | 3 | Opublikuj stronę na GitHub Pages. | Kod QR musi prowadzić do publicznego adresu. |
 | 4 | Wygeneruj QR, wydrukuj, zeskanuj telefonem. | Dopiero wtedy wiadomo, że QR działa. |
 
@@ -105,6 +105,8 @@ Każda zmiana pliku w repozytorium aktualizuje stronę po minucie lub dwóch.
 ---
 
 ## KROK 4 — kod QR i wydruk
+
+**Gotowe pliki PDF** (z mapą miasta jako podkładem) tworzy automatycznie GitHub Actions po każdej zmianie danych lub plakatu. Są na gałęzi `wydruk`: <https://github.com/maciejtyrakowski/Projekt-edukacja-zdrowotna-mapa/tree/wydruk>. Poniżej opis, jak wydrukować plakat samodzielnie z przeglądarki (z podkładem OpenStreetMap).
 
 1. Otwórz `https://TWOJ-LOGIN.github.io/wroclaw-dla-zdrowia/print/druk.html`. Gdy strona do druku jest otwarta z publicznego adresu, adres do QR wpisze się sam. Możesz też otworzyć `print/druk.html` z dysku i wkleić adres ręcznie.
    - Generator przyjmie tylko adres `https://…` publicznej strony. Adresy `localhost`, `192.168…` i pliki z dysku są odrzucane, bo telefon by ich nie otworzył.
