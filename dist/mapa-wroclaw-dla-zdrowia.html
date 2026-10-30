@@ -913,7 +913,6 @@ main { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
   </main>
 
   <footer class="stopka">
-    <p>Autorzy projektu: <span id="autor"></span></p>
     <p>Mapa: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · <a href="https://www.openstreetmap.org/fixthemap">Zgłoś błąd na mapie</a> · Biblioteka <a href="https://leafletjs.com/">Leaflet</a></p>
   </footer>
 
@@ -1039,7 +1038,6 @@ window.WDZ_DANE = {
         "ikona": "serce"
       }
     },
-    "autor": "Adam Pastuszka, Tymoteusz Korszeń, Kacper Sławiński, Jakub Rzeźnik, Maciej Tyrakowski",
     "zrodla_ogolne": [
       {
         "nazwa": "Podkład mapy: © OpenStreetMap contributors (licencja ODbL)",
@@ -1880,7 +1878,6 @@ window.WDZ_DANE = {
       'Położenie ' + przyblizone + ' z ' + miejsca.length + ' znaczników jest przybliżone i czeka na weryfikację. Takie miejsca są oznaczone na liście.';
     ai.textContent = 'Przy przygotowaniu projektu pomagała sztuczna inteligencja (AI). Weryfikacja położenia części znaczników nie została jeszcze zakończona.';
   }
-  document.getElementById('autor').textContent = DANE.meta.autor || '—';
   if (DANE.meta.who) {
     document.getElementById('who').innerHTML = esc(DANE.meta.who.tekst) +
       ' <a href="' + esc(DANE.meta.who.url) + '" target="_blank" rel="noopener">Źródło: WHO</a>';

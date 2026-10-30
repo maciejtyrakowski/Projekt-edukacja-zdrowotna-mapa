@@ -1,7 +1,5 @@
 # Zdrowe miejsca we Wrocławiu — mapa
 
-**Autorzy:** Adam Pastuszka, Tymoteusz Korszeń, Kacper Sławiński, Jakub Rzeźnik, Maciej Tyrakowski
-
 **Strona:** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/
 **Plakat do druku (2 × A4 / A3):** https://maciejtyrakowski.github.io/Projekt-edukacja-zdrowotna-mapa/print/druk.html
 
@@ -111,7 +109,7 @@ Każda zmiana pliku w repozytorium aktualizuje stronę po minucie lub dwóch.
 
 1. Otwórz `https://TWOJ-LOGIN.github.io/wroclaw-dla-zdrowia/print/druk.html`. Gdy strona do druku jest otwarta z publicznego adresu, adres do QR wpisze się sam. Możesz też otworzyć `print/druk.html` z dysku i wkleić adres ręcznie.
    - Generator przyjmie tylko adres `https://…` publicznej strony. Adresy `localhost`, `192.168…` i pliki z dysku są odrzucane, bo telefon by ich nie otworzył.
-2. Wpisz autora i wybierz format: **2 × A4** albo **A3**.
+2. Wybierz format: **2 × A4** albo **A3**.
 3. Poczekaj na komunikat **„Mapa gotowa — możesz drukować”** i kliknij **Drukuj**.
 4. Ustawienia drukowania:
    - **Skala 100%** („Rzeczywisty rozmiar”), nie „Dopasuj do strony”,

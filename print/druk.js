@@ -34,7 +34,6 @@
   var stan = {
     uklad: 'a4x2',
     url: '',
-    autor: '',
     mapy: [],
     wczytane: 0,
     bledyKafelkow: 0
@@ -135,7 +134,6 @@
     dol.appendChild(q);
 
     var zr = el('section', 'zrodla-druk');
-    var autor = stan.autor ? esc(stan.autor) : '______________________________';
     var podklad = PODKLAD === 'sip'
       ? 'podkład mapy: mapa podstawowa Wrocławia, System Informacji Przestrzennej Wrocławia (geoportal.wroclaw.pl). '
       : 'podkład mapy © OpenStreetMap contributors, licencja ODbL — openstreetmap.org/copyright. ';
@@ -149,10 +147,6 @@
     } else {
       html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI). Dane lokalizacyjne zweryfikowano w podanych źródłach.</p>';
     }
-    var autorzyHtml = stan.autor
-      ? stan.autor.split(',').map(function (x) { return '<span class="nazwisko">' + esc(x.trim()) + '</span>'; }).join(', ')
-      : autor;
-    html += '<p class="autorzy"><strong>Autorzy projektu:</strong> ' + autorzyHtml + '</p>';
     zr.innerHTML = html;
     dol.appendChild(zr);
     p.appendChild(dol);
@@ -408,8 +402,6 @@
   // ---------- Start ----------
   var params = new URLSearchParams(location.search);
   stan.url = params.get('url') || przypomnij('url') || '';
-  stan.autor = params.get('autor') || przypomnij('autor') || '';
-  if (!stan.autor && DANE.meta.autor && !/^UZUPEŁNIJ/i.test(DANE.meta.autor)) stan.autor = DANE.meta.autor;
   stan.uklad = (params.get('uklad') || przypomnij('uklad')) === 'a3' ? 'a3' : 'a4x2';
   if (PODKLAD === 'sip') document.body.classList.add('podklad-sip');
 
@@ -420,9 +412,7 @@
   }
 
   var poleUrl = document.getElementById('pole-url');
-  var poleAutor = document.getElementById('pole-autor');
   poleUrl.value = stan.url;
-  poleAutor.value = stan.autor;
   document.querySelector('input[name="uklad"][value="' + stan.uklad + '"]').checked = true;
 
   var czasomierz;
@@ -430,14 +420,12 @@
     clearTimeout(czasomierz);
     czasomierz = setTimeout(function () {
       stan.url = poleUrl.value.trim();
-      stan.autor = poleAutor.value.trim();
-      zapamietaj('url', stan.url); zapamietaj('autor', stan.autor);
+      zapamietaj('url', stan.url);
       odswiezKomunikatUrl();
       zbuduj();
     }, 400);
   }
   poleUrl.addEventListener('input', poZmianie);
-  poleAutor.addEventListener('input', poZmianie);
   Array.prototype.forEach.call(document.querySelectorAll('input[name="uklad"]'), function (r) {
     r.addEventListener('change', function () { stan.uklad = r.value; zapamietaj('uklad', r.value); zbuduj(); });
   });

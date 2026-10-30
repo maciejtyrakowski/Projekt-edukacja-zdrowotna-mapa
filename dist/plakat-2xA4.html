@@ -848,10 +848,6 @@ body { margin: 0; background: #e7ebe5; }
         <span class="komunikat" id="komunikat-url" role="status"></span>
       </li>
       <li>
-        <label for="pole-autor">Autorzy projektu</label>
-        <input id="pole-autor" type="text" placeholder="Imię i nazwisko, klasa">
-      </li>
-      <li>
         <span class="etykieta">Format</span>
         <label class="radio"><input type="radio" name="uklad" value="a4x2" checked> 2 × A4 poziomo (do sklejenia)</label>
         <label class="radio"><input type="radio" name="uklad" value="a3"> 1 × A3 poziomo</label>
@@ -3297,7 +3293,6 @@ window.WDZ_DANE = {
         "ikona": "serce"
       }
     },
-    "autor": "Adam Pastuszka, Tymoteusz Korszeń, Kacper Sławiński, Jakub Rzeźnik, Maciej Tyrakowski",
     "zrodla_ogolne": [
       {
         "nazwa": "Podkład mapy: © OpenStreetMap contributors (licencja ODbL)",
@@ -3979,7 +3974,6 @@ window.WDZ_DANE = {
   var stan = {
     uklad: 'a4x2',
     url: '',
-    autor: '',
     mapy: [],
     wczytane: 0,
     bledyKafelkow: 0
@@ -4080,7 +4074,6 @@ window.WDZ_DANE = {
     dol.appendChild(q);
 
     var zr = el('section', 'zrodla-druk');
-    var autor = stan.autor ? esc(stan.autor) : '______________________________';
     var podklad = PODKLAD === 'sip'
       ? 'podkład mapy: mapa podstawowa Wrocławia, System Informacji Przestrzennej Wrocławia (geoportal.wroclaw.pl). '
       : 'podkład mapy © OpenStreetMap contributors, licencja ODbL — openstreetmap.org/copyright. ';
@@ -4094,10 +4087,6 @@ window.WDZ_DANE = {
     } else {
       html += '<p>Projekt przygotowano z pomocą sztucznej inteligencji (AI). Dane lokalizacyjne zweryfikowano w podanych źródłach.</p>';
     }
-    var autorzyHtml = stan.autor
-      ? stan.autor.split(',').map(function (x) { return '<span class="nazwisko">' + esc(x.trim()) + '</span>'; }).join(', ')
-      : autor;
-    html += '<p class="autorzy"><strong>Autorzy projektu:</strong> ' + autorzyHtml + '</p>';
     zr.innerHTML = html;
     dol.appendChild(zr);
     p.appendChild(dol);
@@ -4353,8 +4342,6 @@ window.WDZ_DANE = {
   // ---------- Start ----------
   var params = new URLSearchParams(location.search);
   stan.url = params.get('url') || przypomnij('url') || '';
-  stan.autor = params.get('autor') || przypomnij('autor') || '';
-  if (!stan.autor && DANE.meta.autor && !/^UZUPEŁNIJ/i.test(DANE.meta.autor)) stan.autor = DANE.meta.autor;
   stan.uklad = (params.get('uklad') || przypomnij('uklad')) === 'a3' ? 'a3' : 'a4x2';
   if (PODKLAD === 'sip') document.body.classList.add('podklad-sip');
 
@@ -4365,9 +4352,7 @@ window.WDZ_DANE = {
   }
 
   var poleUrl = document.getElementById('pole-url');
-  var poleAutor = document.getElementById('pole-autor');
   poleUrl.value = stan.url;
-  poleAutor.value = stan.autor;
   document.querySelector('input[name="uklad"][value="' + stan.uklad + '"]').checked = true;
 
   var czasomierz;
@@ -4375,14 +4360,12 @@ window.WDZ_DANE = {
     clearTimeout(czasomierz);
     czasomierz = setTimeout(function () {
       stan.url = poleUrl.value.trim();
-      stan.autor = poleAutor.value.trim();
-      zapamietaj('url', stan.url); zapamietaj('autor', stan.autor);
+      zapamietaj('url', stan.url);
       odswiezKomunikatUrl();
       zbuduj();
     }, 400);
   }
   poleUrl.addEventListener('input', poZmianie);
-  poleAutor.addEventListener('input', poZmianie);
   Array.prototype.forEach.call(document.querySelectorAll('input[name="uklad"]'), function (r) {
     r.addEventListener('change', function () { stan.uklad = r.value; zapamietaj('uklad', r.value); zbuduj(); });
   });
