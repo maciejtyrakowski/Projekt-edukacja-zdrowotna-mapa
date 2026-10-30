@@ -338,7 +338,7 @@ window.WDZ_DANE = {
       "kategoria": "woda",
       "adres": "ul. Wejherowska 34",
       "opis": "Pływalnia z miejskiej listy basenów.",
-      "krotko": "Kryta pływalnia.",
+      "krotko": "Z miejskiej listy basenów.",
       "korzysc": "Pływanie to ruch, który mało obciąża stawy — dobry w każdym wieku.",
       "uwagi": "Ceny i godziny sprawdź na stronie obiektu.",
       "wspolrzedne": {
